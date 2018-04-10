@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>ios 证书申请和APP上架 | 刘辉的博客 | 付出努力才会得到回报</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="ios,证书申请,APP上架">
+    <meta name="description" content="证书申请第一部分：成员介绍1.Certification(证书) 证书是对电脑开发资格的认证，每个开发者帐号有一套，分为两种：  Developer Certification(开发证书)安装在电脑上提供权限：开发人员通过设备进行真机测试。可以生成副本供多台电脑安装； Distribution Certification(发布证书)安装在电脑上提供发布iOS程序的权限：开发人员可以制做测试版和发布">
+<meta name="keywords" content="ios,证书申请,APP上架">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ios 证书申请和APP上架">
+<meta property="og:url" content="https://liuhoi.github.io/2017/11/04/ios-证书申请和APP上架/index.html">
+<meta property="og:site_name" content="刘辉的博客">
+<meta property="og:description" content="证书申请第一部分：成员介绍1.Certification(证书) 证书是对电脑开发资格的认证，每个开发者帐号有一套，分为两种：  Developer Certification(开发证书)安装在电脑上提供权限：开发人员通过设备进行真机测试。可以生成副本供多台电脑安装； Distribution Certification(发布证书)安装在电脑上提供发布iOS程序的权限：开发人员可以制做测试版和发布">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://liuhoi.github.io/2017/11/04/ios-证书申请和APP上架/c_1.jpg">
+<meta property="og:image" content="https://liuhoi.github.io/2017/11/04/ios-证书申请和APP上架/c_2.jpg">
+<meta property="og:image" content="https://liuhoi.github.io/2017/11/04/ios-证书申请和APP上架/c_3.jpg">
+<meta property="og:image" content="https://liuhoi.github.io/2017/11/04/ios-证书申请和APP上架/c_5.jpg">
+<meta property="og:image" content="https://liuhoi.github.io/2017/11/04/ios-证书申请和APP上架/c_4.jpg">
+<meta property="og:image" content="https://liuhoi.github.io/2017/11/04/ios-证书申请和APP上架/c_6.jpg">
+<meta property="og:image" content="https://liuhoi.github.io/2017/11/04/ios-证书申请和APP上架/c_7.jpg">
+<meta property="og:image" content="https://liuhoi.github.io/2017/11/04/ios-证书申请和APP上架/c_8.jpg">
+<meta property="og:image" content="https://liuhoi.github.io/2017/11/04/ios-证书申请和APP上架/c_9.jpg">
+<meta property="og:image" content="https://liuhoi.github.io/2017/11/04/ios-证书申请和APP上架/c_10.jpg">
+<meta property="og:image" content="https://liuhoi.github.io/2017/11/04/ios-证书申请和APP上架/c_11.jpg">
+<meta property="og:image" content="https://liuhoi.github.io/2017/11/04/ios-证书申请和APP上架/c_12.jpg">
+<meta property="og:image" content="https://liuhoi.github.io/2017/11/04/ios-证书申请和APP上架/c_13.jpg">
+<meta property="og:image" content="https://liuhoi.github.io/2017/11/04/ios-证书申请和APP上架/c_14.jpg">
+<meta property="og:image" content="https://liuhoi.github.io/2017/11/04/ios-证书申请和APP上架/c_15.jpg">
+<meta property="og:image" content="https://liuhoi.github.io/2017/11/04/ios-证书申请和APP上架/c_16.jpg">
+<meta property="og:image" content="https://liuhoi.github.io/2017/11/04/ios-证书申请和APP上架/c_17.jpg">
+<meta property="og:image" content="https://liuhoi.github.io/2017/11/04/ios-证书申请和APP上架/c_18.jpg">
+<meta property="og:image" content="https://liuhoi.github.io/2017/11/04/ios-证书申请和APP上架/c_19.jpg">
+<meta property="og:image" content="https://liuhoi.github.io/2017/11/04/ios-证书申请和APP上架/c_20.jpg">
+<meta property="og:image" content="https://liuhoi.github.io/2017/11/04/ios-证书申请和APP上架/c_21.jpg">
+<meta property="og:image" content="https://liuhoi.github.io/2017/11/04/ios-证书申请和APP上架/c_22.jpg">
+<meta property="og:image" content="https://liuhoi.github.io/2017/11/04/ios-证书申请和APP上架/c_23.jpg">
+<meta property="og:image" content="https://liuhoi.github.io/2017/11/04/ios-证书申请和APP上架/c_24.jpg">
+<meta property="og:image" content="https://liuhoi.github.io/2017/11/04/ios-证书申请和APP上架/c_25.jpg">
+<meta property="og:updated_time" content="2018-04-09T14:20:16.031Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="ios 证书申请和APP上架">
+<meta name="twitter:description" content="证书申请第一部分：成员介绍1.Certification(证书) 证书是对电脑开发资格的认证，每个开发者帐号有一套，分为两种：  Developer Certification(开发证书)安装在电脑上提供权限：开发人员通过设备进行真机测试。可以生成副本供多台电脑安装； Distribution Certification(发布证书)安装在电脑上提供发布iOS程序的权限：开发人员可以制做测试版和发布">
+<meta name="twitter:image" content="https://liuhoi.github.io/2017/11/04/ios-证书申请和APP上架/c_1.jpg">
+    
+        <link rel="alternate" type="application/atom+xml" title="刘辉的博客" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/img/cat1.JPG">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/cat1.JPG">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">刘辉</h5>
+          <a href="mailto:pk3845473@163.com" title="pk3845473@163.com" class="mail">pk3845473@163.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                归档
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://liuhoi.github.io/" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">ios 证书申请和APP上架</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">ios 证书申请和APP上架</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2017-11-04T13:14:49.000Z" itemprop="datePublished" class="page-time">
+  2017-11-04
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/ios/">ios</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#证书申请第一部分：成员介绍"><span class="post-toc-number">1.</span> <span class="post-toc-text">证书申请第一部分：成员介绍</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-Certification-证书"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">1.Certification(证书)</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-Provisioning-Profile-授权文件"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">2.Provisioning Profile(授权文件)</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3-Keychain-开发密钥"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">3. Keychain(开发密钥)</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#证书申请第二部分：证书申请流程"><span class="post-toc-number">2.</span> <span class="post-toc-text">证书申请第二部分：证书申请流程</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#step1-登录（99美元账号）https-developer-apple-com"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">step1:登录（99美元账号）https://developer.apple.com</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#step2-生成CSR文件"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">step2:生成CSR文件</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#step3-注册-App-ID-流程"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">step3:注册 App ID 流程</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#step4-证书申请"><span class="post-toc-number">2.4.</span> <span class="post-toc-text">step4: 证书申请</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#setp5-授权文件申请（Provisioning-Profile）"><span class="post-toc-number">2.5.</span> <span class="post-toc-text">setp5:授权文件申请（Provisioning Profile）</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#证书申请第三部分-总结"><span class="post-toc-number">3.</span> <span class="post-toc-text">证书申请第三部分:总结</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#IOS上架"><span class="post-toc-number">4.</span> <span class="post-toc-text">IOS上架</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-HBuilder准备"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">1.HBuilder准备</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-HBuilder打包需要的文件"><span class="post-toc-number">4.2.</span> <span class="post-toc-text">2.HBuilder打包需要的文件</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3-Application-Loader-（苹果上传-ipa的软件）"><span class="post-toc-number">4.3.</span> <span class="post-toc-text">3.Application Loader （苹果上传.ipa的软件）</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3-iTunes-connect准备-苹果的网站https-itunesconnect-apple-com-login"><span class="post-toc-number">4.4.</span> <span class="post-toc-text">3.iTunes connect准备(苹果的网站https://itunesconnect.apple.com/login)</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-ios-证书申请和APP上架"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">ios 证书申请和APP上架</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2017-11-04 21:14:49" datetime="2017-11-04T13:14:49.000Z"  itemprop="datePublished">2017-11-04</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/ios/">ios</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h2 id="证书申请第一部分：成员介绍"><a href="#证书申请第一部分：成员介绍" class="headerlink" title="证书申请第一部分：成员介绍"></a>证书申请第一部分：成员介绍</h2><h3 id="1-Certification-证书"><a href="#1-Certification-证书" class="headerlink" title="1.Certification(证书)"></a>1.Certification(证书)</h3><blockquote>
+<p>证书是对电脑开发资格的认证，每个开发者帐号有一套，分为两种：</p>
+<ol>
+<li>Developer Certification(开发证书)<br>安装在电脑上提供权限：开发人员通过设备进行真机测试。<br>可以生成副本供多台电脑安装；</li>
+<li>Distribution Certification(发布证书)<br>安装在电脑上提供发布iOS程序的权限：开发人员可以制做测试版和发布版的程序。不可生成副本，仅有配置该证书的电脑才可使用；</li>
+</ol>
+</blockquote>
+<h3 id="2-Provisioning-Profile-授权文件"><a href="#2-Provisioning-Profile-授权文件" class="headerlink" title="2.Provisioning Profile(授权文件)"></a>2.Provisioning Profile(授权文件)</h3><blockquote>
+<p>授权文件是对设备如iPod Touch、iPad、iPhone的授权，文件内记录的是设备的UDID和程序的App Id，即：使被授权的设备可以安装或调试Bundle identifier与授权文件中记录的App Id对应的程序。<br>开发者帐号在创建授权文件时候会选择App Id，（开发者帐号下App Id中添加，单选）和UDID（开发者帐号下Devices中添加最多100个，多选）。<br>授权文件分为两种，对应相应的证书使用：</p>
+<ol>
+<li>Developer Provisioning Profile(开发授权文件)<br>在装有开发证书或副本的电脑上使用，开发人员选择该授权文件通过电脑将程序安装到授权文件记录的设备中，即可进行真机测试。<br>注意：确保电脑有权限真机调试，即安装了开发证书或副本；在开发工具中程序的Bundle identifier和选中使用的授权文件的App Id要一致；连接调试的设备的UDID在选中的授权文件中有记录。</li>
+<li>Distribution Provisioning Profile(发布授权文件)<br>在装有发布证书的电脑上（即配置证书的电脑，只有一台）制做测试版和发布版的程序。<br>发布版就是发布到App Store上的程序文件，开发者帐号创建授权文件时选择store选项，选择App Id，无需选择UDID；<br>测试版就是在发布之前交给测试人员可同步到设备上的程序文件，开发者帐号创建授权文件时选择AdHoc，选择App Id和UDID；只有选中的UDID对应的设备才可能安装上通过该授权文件制做的程序。</li>
+</ol>
+</blockquote>
+<h3 id="3-Keychain-开发密钥"><a href="#3-Keychain-开发密钥" class="headerlink" title="3. Keychain(开发密钥)"></a>3. Keychain(开发密钥)</h3><blockquote>
+<p>安装证书成功的情况下证书下都会生成Keychain，上面提到的证书副本（导出证书重新命名）就是通过配置证书的电脑导出Keychain（就是.p12文件）安装到其他机子上，让其他机子得到证书对应的权限。Developer Certification就可以制做副本Keychain分发到其他电脑上安装，使其可以进行真机测试。<br>注意：Distribution Certification只有配置证书的电脑才可使用，因此即使导出导出Keychain安装到其他电脑上，其他电脑也不可能具有证书的权限。</p>
+</blockquote>
+<h2 id="证书申请第二部分：证书申请流程"><a href="#证书申请第二部分：证书申请流程" class="headerlink" title="证书申请第二部分：证书申请流程"></a>证书申请第二部分：证书申请流程</h2><h3 id="step1-登录（99美元账号）https-developer-apple-com"><a href="#step1-登录（99美元账号）https-developer-apple-com" class="headerlink" title="step1:登录（99美元账号）https://developer.apple.com"></a>step1:登录（99美元账号）<a href="https://developer.apple.com" target="_blank" rel="noopener">https://developer.apple.com</a></h3><p> <img src="/2017/11/04/ios-证书申请和APP上架/c_1.jpg" alt="图片1"></p>
+<ol>
+<li><p>登录成功后在页面右侧选择“Certificates”：</p>
+<p><img src="/2017/11/04/ios-证书申请和APP上架/c_2.jpg" alt="图片2"></p>
+</li>
+<li><p>打开之后可以看到面板：</p>
+<p><img src="/2017/11/04/ios-证书申请和APP上架/c_3.jpg" alt="图片3"></p>
+</li>
+</ol>
+<h3 id="step2-生成CSR文件"><a href="#step2-生成CSR文件" class="headerlink" title="step2:生成CSR文件"></a>step2:生成CSR文件</h3><ol>
+<li><p>打开 -&gt;钥匙串访问</p>
+<p><img src="/2017/11/04/ios-证书申请和APP上架/c_5.jpg" alt="图片5"></p>
+</li>
+<li><p>打开右上方钥匙串访问栏-&gt;证书助理-&gt;从证书颁发机构请求证书…</p>
+<p><img src="/2017/11/04/ios-证书申请和APP上架/c_4.jpg" alt="图片4"></p>
+</li>
+<li><p>填写一个邮箱地址，选择“存储到磁盘”，点击继续，完成了。</p>
+<p><img src="/2017/11/04/ios-证书申请和APP上架/c_6.jpg" alt="图片6"> </p>
+</li>
+</ol>
+<p>申请成功后的文件：</p>
+<p>  <img src="/2017/11/04/ios-证书申请和APP上架/c_7.jpg" alt="图片7"> </p>
+<h3 id="step3-注册-App-ID-流程"><a href="#step3-注册-App-ID-流程" class="headerlink" title="step3:注册 App ID 流程"></a>step3:注册 App ID 流程</h3><ol>
+<li><p>点c_3图面板中的App IDs 右上角的加号。然后填写App ID的名字：</p>
+<p><img src="/2017/11/04/ios-证书申请和APP上架/c_8.jpg" alt="图片8"> </p>
+</li>
+<li><p>填写bundle ID:</p>
+<p><img src="/2017/11/04/ios-证书申请和APP上架/c_9.jpg" alt="图片9"> </p>
+</li>
+<li><p>选择App需要支持的服务，（如：app耍要推送服务，就勾选Push Notifications)</p>
+<p><img src="/2017/11/04/ios-证书申请和APP上架/c_10.jpg" alt="图片10"> </p>
+</li>
+<li>最后会有一个详细的内容列表，对应无误后，提交完成。</li>
+</ol>
+<h3 id="step4-证书申请"><a href="#step4-证书申请" class="headerlink" title="step4: 证书申请"></a>step4: 证书申请</h3><ol>
+<li><p>选择证书的类型，下面罗列我们iOS开发常用的证书类型</p>
+<p><img src="/2017/11/04/ios-证书申请和APP上架/c_11.jpg" alt="图片11"> </p>
+</li>
+<li><p>如果是申请推送证书，则会关联一个App ID</p>
+<p><img src="/2017/11/04/ios-证书申请和APP上架/c_12.jpg" alt="图片12"> </p>
+</li>
+<li><p>上传我们之前建好的CSR文件(详见step2)</p>
+<p><img src="/2017/11/04/ios-证书申请和APP上架/c_13.jpg" alt="图片13">  </p>
+</li>
+<li>恭喜你，到此为止，你完成了证书的申请，简单吧。</li>
+</ol>
+<h3 id="setp5-授权文件申请（Provisioning-Profile）"><a href="#setp5-授权文件申请（Provisioning-Profile）" class="headerlink" title="setp5:授权文件申请（Provisioning Profile）"></a>setp5:授权文件申请（Provisioning Profile）</h3><ol>
+<li><p>选择授权文件类型，下面罗列了iOS常的授权文件类型</p>
+<p><img src="/2017/11/04/ios-证书申请和APP上架/c_14.jpg" alt="图片14">   </p>
+</li>
+<li><p>选择关联App ID</p>
+<p><img src="/2017/11/04/ios-证书申请和APP上架/c_15.jpg" alt="图片15">   </p>
+</li>
+<li><p>选择关联的证书</p>
+<p><img src="/2017/11/04/ios-证书申请和APP上架/c_16.jpg" alt="图片16">   </p>
+</li>
+<li><p>选择授权的设备（通过 UDID），除了企业证书（inHouse）外，只有你添加的设备才能进行调度或测试</p>
+<p><img src="/2017/11/04/ios-证书申请和APP上架/c_17.jpg" alt="图片17">   </p>
+</li>
+<li><p>给授权文件命一个能和其它授权文件区分的名字</p>
+<p><img src="/2017/11/04/ios-证书申请和APP上架/c_18.jpg" alt="图片18">  </p>
+</li>
+</ol>
+<blockquote>
+<p>恭喜你，到此为止，授权文件申请完成了，简单吧。<br>在我们iOS开发中，常用的证书相关操作流程就全在上面了。</p>
+</blockquote>
+<h2 id="证书申请第三部分-总结"><a href="#证书申请第三部分-总结" class="headerlink" title="证书申请第三部分:总结"></a>证书申请第三部分:总结</h2><ol>
+<li>成功安装测试证书的条件：a).开发者证书+私钥。 b).授权文件。</li>
+<li>如果你想通过证书进行真机调试，请选择开发版证书(Development Certificate)，和相应的授权文件(Development Provisioning Profile) 。</li>
+<li>如果你想让更多的开发者能进行真机调试，请先对需要真机调试的设备进行授权，然后将开发版证书(Development Certificate)下载到本机安装后导出为带私的.p12的文件，和相应的授权文件(Development Provisioning Profile)交由开发者安装，成功后即可进行真机调试。</li>
+<li>如果你想让更多的机子进行真机测试，请先对需要测试的设备进行授权，然后选择生产版证书(Distribution Ad_hoc Certificate)和相应的授权文件(Distribution Ad_hoc Provisioning Profile)打包后分发给要测试的设备即可。</li>
+</ol>
+<h2 id="IOS上架"><a href="#IOS上架" class="headerlink" title="IOS上架"></a>IOS上架</h2><h3 id="1-HBuilder准备"><a href="#1-HBuilder准备" class="headerlink" title="1.HBuilder准备"></a>1.HBuilder准备</h3><ol>
+<li>图标（需要一张1024*1024）<blockquote>
+<p>APP显示用的图标  </p>
+</blockquote>
+</li>
+<li>启动图片（安卓3张，ios13张）<br><img src="/2017/11/04/ios-证书申请和APP上架/c_19.jpg" alt="图片19"><br><img src="/2017/11/04/ios-证书申请和APP上架/c_20.jpg" alt="图片20">  </li>
+</ol>
+<h3 id="2-HBuilder打包需要的文件"><a href="#2-HBuilder打包需要的文件" class="headerlink" title="2.HBuilder打包需要的文件"></a>2.HBuilder打包需要的文件</h3><blockquote>
+<p>AppID(Bundle ID)，私钥密码(生成p12证书时填写的密码)，<br>Profile文件（描述文件也称授权文件以.mobileprovision结尾），<br>私钥证书（p12证书以.p12结尾）</p>
+</blockquote>
+<p>   <img src="/2017/11/04/ios-证书申请和APP上架/c_21.jpg" alt="图片21">  </p>
+<h3 id="3-Application-Loader-（苹果上传-ipa的软件）"><a href="#3-Application-Loader-（苹果上传-ipa的软件）" class="headerlink" title="3.Application Loader （苹果上传.ipa的软件）"></a>3.Application Loader （苹果上传.ipa的软件）</h3><ol>
+<li>开发这账户<blockquote>
+<p>登陆账户</p>
+</blockquote>
+</li>
+<li><p>App专用密码</p>
+<blockquote>
+<p>前往<a href="https://appleid.apple.com" target="_blank" rel="noopener">https://appleid.apple.com</a> 申请  </p>
+</blockquote>
+<p><img src="/2017/11/04/ios-证书申请和APP上架/c_22.jpg" alt="图片22"> </p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/2017/11/04/ios-证书申请和APP上架/c_23.jpg" alt="图片23" title="">
+                </div>
+                <div class="image-caption">图片23</div>
+            </figure>   
+</li>
+</ol>
+<h3 id="3-iTunes-connect准备-苹果的网站https-itunesconnect-apple-com-login"><a href="#3-iTunes-connect准备-苹果的网站https-itunesconnect-apple-com-login" class="headerlink" title="3.iTunes connect准备(苹果的网站https://itunesconnect.apple.com/login)"></a>3.iTunes connect准备(苹果的网站<a href="https://itunesconnect.apple.com/login" target="_blank" rel="noopener">https://itunesconnect.apple.com/login</a>)</h3><ol>
+<li>图标（需要一张1024*1024）<blockquote>
+<p>APP显示用的图标  </p>
+</blockquote>
+</li>
+<li>APP宣传页(1-5张，分辨率需要如下)<br><img src="/2017/11/04/ios-证书申请和APP上架/c_24.jpg" alt="图片24"><br><img src="/2017/11/04/ios-证书申请和APP上架/c_25.jpg" alt="图片25"> </li>
+<li>电话号码，邮箱，公司名称，技术支持网址(URL) 等<blockquote>
+<p>电话号码，邮箱等 电话号码要加+86如+8613888888888<br>技术支持网址(URL):pc端官网</p>
+</blockquote>
+</li>
+</ol>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2018-04-09T14:20:16.031Z" itemprop="dateUpdated">2018-04-09 22:20:16</time>
+</span><br>
+
+
+        
+        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2017/11/04/ios-证书申请和APP上架/" target="_blank" rel="external">https://liuhoi.github.io/2017/11/04/ios-证书申请和APP上架/</a>
+        
+    </div>
+    
+    <footer>
+        <a href="https://liuhoi.github.io">
+            <img src="/img/cat1.JPG" alt="刘辉">
+            刘辉
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/APP上架/">APP上架</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ios/">ios</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/证书申请/">证书申请</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://liuhoi.github.io/2017/11/04/ios-证书申请和APP上架/&title=《ios 证书申请和APP上架》 — 刘辉的博客&pic=https://liuhoi.github.io/img/cat1.JPG" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://liuhoi.github.io/2017/11/04/ios-证书申请和APP上架/&title=《ios 证书申请和APP上架》 — 刘辉的博客&source=刘辉的博客" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://liuhoi.github.io/2017/11/04/ios-证书申请和APP上架/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《ios 证书申请和APP上架》 — 刘辉的博客&url=https://liuhoi.github.io/2017/11/04/ios-证书申请和APP上架/&via=https://liuhoi.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://liuhoi.github.io/2017/11/04/ios-证书申请和APP上架/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2017/11/15/mui-vue结合使用/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">mui+vue结合使用</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2017/11/04/android-生成证书/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">android 生成证书</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢大爷~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.JPG" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="/img/wechat.JPG" data-alipay="/img/alipay.JPG">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>刘辉 &copy; 2015 - 2018</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://liuhoi.github.io/2017/11/04/ios-证书申请和APP上架/&title=《ios 证书申请和APP上架》 — 刘辉的博客&pic=https://liuhoi.github.io/img/cat1.JPG" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://liuhoi.github.io/2017/11/04/ios-证书申请和APP上架/&title=《ios 证书申请和APP上架》 — 刘辉的博客&source=刘辉的博客" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://liuhoi.github.io/2017/11/04/ios-证书申请和APP上架/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《ios 证书申请和APP上架》 — 刘辉的博客&url=https://liuhoi.github.io/2017/11/04/ios-证书申请和APP上架/&via=https://liuhoi.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://liuhoi.github.io/2017/11/04/ios-证书申请和APP上架/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACr0lEQVR42u3a0W7jQAgF0Pz/T7evK7W2LzCkWen4KWochzOVZgjwesXX1z/Xz79fvf75qfz1/WcPX3h4eHiD0O8fffXu/UJcLcrV8+9jy2PGw8PD2+ZdBTq5534hJs9J4sHDw8P7HF4SdPWe6tPw8PDw/i9eNdA8ge4VMvDw8PD+ipcUI86my0npNlmgY7UWPDw8vJiXd5E+5/VKfw8PDw9v3FVPmk/zsYO85FGOFg8PD2+Bl2+485S3dxRVDwY8PDy8bV5ewM0HsJLBqclC5A0zPDw8vD1e78uqLbHeiGpSkojq03h4eHiHeJONu3dUVN+dNNvw8PDwtnm9LThH5vckQRcKHHh4eHgLvF4ZoppAJ8GdKmQ8pNd4eHh4Y968hHqq9DBpmz2MDuDh4eEd4uVJcN7O75Vc8+ckC1TI3/Hw8PBavF5DK79nPmrQHMbCw8PDewuvGlbvYKhGki/f5UwZHh4e3lFeUhjtJbv5p3oHz0PBAg8PD2+Bl2/QycadP6H3jfMlxsPDw9vg5Unt5DDoNd7y1Lx8HuLh4eEVedWRpj3YqZIEHh4e3h5v3p6vFnOr3zipM+Dh4eG9h9crDeS//fMxgmrC/cudeHh4eGu85IvzdPmdS/MQDx4eHt4C71QjagOcL0T0j8HDw8M7yutt3NUBqeoC9dpsr945hoeHhzfmTYZHk6JGdVGaExB4eHh4y7y8AFEtAVfLxNXEOvqtgIeHh3eI91W88pR3EnTv2MDDw8N7D2/SiDpVvOg12+YDB3h4eHgTXrU9X93EX62rmoI35yPw8PDwBrz5ptwbL6iOfFULJXh4eHifyZvgy+EGC1Q4u/Dw8PDewqsGV62IVIcVHiLEw8PDW+NVm16T4u+81FtYGjw8PLwFXnW7zxPoZhK81oTDw8PDG/O+AfFWh1zPtP0iAAAAAElFTkSuQmCC" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '付出努力才会得到回报！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '刘辉的博客!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>

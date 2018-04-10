@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>mui+vue结合使用 | 刘辉的博客 | 付出努力才会得到回报</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="mui,vue,JavaScript">
+    <meta name="description" content="Mui组件通用CSS类名省略 当文字内容超过一行或者多行时，溢出文本用省略号代替。   显示单行：.mui-ellipsis&amp;lt;p class=&amp;quot;mui-ellipsis&amp;quot;&amp;gt;我在一行内，当我超出了会。&amp;lt;/p&amp;gt;  显示两行：.mui-ellipsis-2&amp;lt;p class=&amp;quot;mui-ellipsis-2&amp;quot;&amp;gt;我在一行内，当我超出了">
+<meta name="keywords" content="mui,vue,JavaScript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="mui+vue结合使用">
+<meta property="og:url" content="https://liuhoi.github.io/2017/11/15/mui-vue结合使用/index.html">
+<meta property="og:site_name" content="刘辉的博客">
+<meta property="og:description" content="Mui组件通用CSS类名省略 当文字内容超过一行或者多行时，溢出文本用省略号代替。   显示单行：.mui-ellipsis&amp;lt;p class=&amp;quot;mui-ellipsis&amp;quot;&amp;gt;我在一行内，当我超出了会。&amp;lt;/p&amp;gt;  显示两行：.mui-ellipsis-2&amp;lt;p class=&amp;quot;mui-ellipsis-2&amp;quot;&amp;gt;我在一行内，当我超出了">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-04-09T14:20:16.091Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="mui+vue结合使用">
+<meta name="twitter:description" content="Mui组件通用CSS类名省略 当文字内容超过一行或者多行时，溢出文本用省略号代替。   显示单行：.mui-ellipsis&amp;lt;p class=&amp;quot;mui-ellipsis&amp;quot;&amp;gt;我在一行内，当我超出了会。&amp;lt;/p&amp;gt;  显示两行：.mui-ellipsis-2&amp;lt;p class=&amp;quot;mui-ellipsis-2&amp;quot;&amp;gt;我在一行内，当我超出了">
+    
+        <link rel="alternate" type="application/atom+xml" title="刘辉的博客" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/img/cat1.JPG">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/cat1.JPG">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">刘辉</h5>
+          <a href="mailto:pk3845473@163.com" title="pk3845473@163.com" class="mail">pk3845473@163.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                归档
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://liuhoi.github.io/" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">mui+vue结合使用</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">mui+vue结合使用</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2017-11-15T12:52:40.000Z" itemprop="datePublished" class="page-time">
+  2017-11-15
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/mui-js-vue-js开发/">mui.js+vue.js开发</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Mui组件通用CSS类名"><span class="post-toc-number">1.</span> <span class="post-toc-text">Mui组件通用CSS类名</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#省略"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">省略</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#布局"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">布局</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#局部元素布局"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">局部元素布局</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#设置边距-默认为10px外边距-。"><span class="post-toc-number">1.3.1.</span> <span class="post-toc-text">设置边距  (默认为10px外边距)。</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#设置元素为内联块，内联，块对象"><span class="post-toc-number">1.3.2.</span> <span class="post-toc-text">设置元素为内联块，内联，块对象</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#浮动"><span class="post-toc-number">1.3.3.</span> <span class="post-toc-text">浮动</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#OS环境判断多平台适配："><span class="post-toc-number">1.3.4.</span> <span class="post-toc-text">OS环境判断多平台适配：</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#栅格系统布局"><span class="post-toc-number">1.3.5.</span> <span class="post-toc-text">栅格系统布局</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#区域滚动布局-需手动设置高度，否者滚动区域没有高度"><span class="post-toc-number">1.3.6.</span> <span class="post-toc-text">区域滚动布局(需手动设置高度，否者滚动区域没有高度)</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Mui常用配置"><span class="post-toc-number">2.</span> <span class="post-toc-text">Mui常用配置</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#mui-openWindow配置（最好是通过URL传参数，使用extras有兼容性问题）"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">mui.openWindow配置（最好是通过URL传参数，使用extras有兼容性问题）</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#单webview上拉加载下拉刷新配置"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">单webview上拉加载下拉刷新配置</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#下拉刷新和上拉加载实现-下拉刷新中有重置上拉加载的方法"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">下拉刷新和上拉加载实现(下拉刷新中有重置上拉加载的方法)</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Ajax请求"><span class="post-toc-number">2.4.</span> <span class="post-toc-text">Ajax请求</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Mui与jq冲突解决办法"><span class="post-toc-number">2.5.</span> <span class="post-toc-text">Mui与jq冲突解决办法</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Mui传值"><span class="post-toc-number">2.6.</span> <span class="post-toc-text">Mui传值</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Div模式下顶部渐变配置"><span class="post-toc-number">2.7.</span> <span class="post-toc-text">Div模式下顶部渐变配置</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Mui返回时刷新"><span class="post-toc-number">2.8.</span> <span class="post-toc-text">Mui返回时刷新</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Mui中判断是否断网"><span class="post-toc-number">2.9.</span> <span class="post-toc-text">Mui中判断是否断网</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#mui常用函数封装"><span class="post-toc-number">3.</span> <span class="post-toc-text">mui常用函数封装</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#常用Picker"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">常用Picker</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#地址选择器"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">地址选择器</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#时间选择器"><span class="post-toc-number">3.3.</span> <span class="post-toc-text">时间选择器</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#actionSheet-封装"><span class="post-toc-number">3.4.</span> <span class="post-toc-text">actionSheet 封装</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#选取照片"><span class="post-toc-number">3.5.</span> <span class="post-toc-text">选取照片</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Mui问题BUG解决办法"><span class="post-toc-number">4.</span> <span class="post-toc-text">Mui问题BUG解决办法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#IOS端键盘弹出后顶部导航栏乱飞"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">IOS端键盘弹出后顶部导航栏乱飞</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#IOS端由BUG1引起的光标错位"><span class="post-toc-number">4.2.</span> <span class="post-toc-text">IOS端由BUG1引起的光标错位</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Mui结合vue的方案"><span class="post-toc-number">5.</span> <span class="post-toc-text">Mui结合vue的方案</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#在vue中使用picker封装-单个picker-（结合BUG1，-BUG2方案使用）"><span class="post-toc-number">5.1.</span> <span class="post-toc-text">在vue中使用picker封装(单个picker)（结合BUG1， BUG2方案使用）</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#在vue中使用picker封装-多个在1的基础上修改"><span class="post-toc-number">5.2.</span> <span class="post-toc-text">在vue中使用picker封装(多个在1的基础上修改)</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#在vue中使用-style"><span class="post-toc-number">5.3.</span> <span class="post-toc-text">在vue中使用:style</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#在vue做版本更新"><span class="post-toc-number">5.4.</span> <span class="post-toc-text">在vue做版本更新</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#本地JS"><span class="post-toc-number">5.4.1.</span> <span class="post-toc-text">本地JS</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#服务器上"><span class="post-toc-number">5.4.2.</span> <span class="post-toc-text">服务器上</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#在vue中循环中倒计时"><span class="post-toc-number">5.5.</span> <span class="post-toc-text">在vue中循环中倒计时</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#在vue中使用上传图片"><span class="post-toc-number">5.6.</span> <span class="post-toc-text">在vue中使用上传图片</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-mui-vue结合使用"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">mui+vue结合使用</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2017-11-15 20:52:40" datetime="2017-11-15T12:52:40.000Z"  itemprop="datePublished">2017-11-15</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/mui-js-vue-js开发/">mui.js+vue.js开发</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h2 id="Mui组件通用CSS类名"><a href="#Mui组件通用CSS类名" class="headerlink" title="Mui组件通用CSS类名"></a>Mui组件通用CSS类名</h2><h3 id="省略"><a href="#省略" class="headerlink" title="省略"></a>省略</h3><blockquote>
+<p>当文字内容超过一行或者多行时，溢出文本用省略号代替。</p>
+</blockquote>
+<ol>
+<li><p>显示单行：.mui-ellipsis<br><code>&lt;p class=&quot;mui-ellipsis&quot;&gt;我在一行内，当我超出了会。&lt;/p&gt;</code></p>
+</li>
+<li><p>显示两行：.mui-ellipsis-2<br><code>&lt;p class=&quot;mui-ellipsis-2&quot;&gt;我在一行内，当我超出了会。&lt;/p&gt;</code></p>
+</li>
+<li><p>若需要设置显示多行，通过设置-webkit-line-clamp属性，如显示三行添加style=”-webkit-line-clamp:3”:<br><code>&lt;p class=&quot;mui-ellipsis-2&quot; style=&quot;-webkit-line-clamp:3&quot;&gt;我在三行内，当我超出了会显示省略号。我在三行内，当我超出了会显示省略号。我在三行内，当我超出了会显示省略号。我在三行内，当我超出了会显示省略号。我在三行内，当我超出了会显示省略号。我在三行内，当我超出了会显示省略号。&lt;/p&gt;</code></p>
+</li>
+</ol>
+<h3 id="布局"><a href="#布局" class="headerlink" title="布局"></a>布局</h3><blockquote>
+<p>整体结构如下：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;header class=&quot;mui-bar mui-bar-nav&quot;&gt;</span><br><span class="line">    &lt;a class=&quot;mui-action-back mui-icon mui-icon-left-nav mui-pull-left&quot;&gt;&lt;/a&gt;</span><br><span class="line">    &lt;h1 class=&quot;mui-title&quot;&gt;标题&lt;/h1&gt;</span><br><span class="line">&lt;/header&gt;</span><br><span class="line">&lt;footer class=&quot;mui-bar mui-bar-footer&quot;&gt;</span><br><span class="line">	底部</span><br><span class="line">&lt;/footer&gt;</span><br><span class="line">&lt;div class=&quot;mui-content&quot;&gt;</span><br><span class="line">	主体</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>当底部内容为选项卡时候，我们会将.mui-bar-footer替换为.mui-bar-tab：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;nav class=&quot;mui-bar mui-bar-tab&quot;&gt;</span><br><span class="line">    &lt;a class=&quot;mui-tab-item mui-active&quot;&gt;</span><br><span class="line">        &lt;span class=&quot;mui-icon mui-icon-home&quot;&gt;&lt;/span&gt;</span><br><span class="line">        &lt;span class=&quot;mui-tab-label&quot;&gt;首页&lt;/span&gt;</span><br><span class="line">    &lt;/a&gt;</span><br><span class="line">    &lt;a class=&quot;mui-tab-item&quot;&gt;</span><br><span class="line">        &lt;span class=&quot;mui-icon mui-icon-phone&quot;&gt;&lt;/span&gt;</span><br><span class="line">        &lt;span class=&quot;mui-tab-label&quot;&gt;电话&lt;/span&gt;</span><br><span class="line">    &lt;/a&gt;</span><br><span class="line">    &lt;a class=&quot;mui-tab-item&quot;&gt;</span><br><span class="line">        &lt;span class=&quot;mui-icon mui-icon-email&quot;&gt;&lt;/span&gt;</span><br><span class="line">        &lt;span class=&quot;mui-tab-label&quot;&gt;邮件&lt;/span&gt;</span><br><span class="line">    &lt;/a&gt;</span><br><span class="line">    &lt;a class=&quot;mui-tab-item&quot;&gt;</span><br><span class="line">        &lt;span class=&quot;mui-icon mui-icon-gear&quot;&gt;&lt;/span&gt;</span><br><span class="line">        &lt;span class=&quot;mui-tab-label&quot;&gt;设置&lt;/span&gt;</span><br><span class="line">    &lt;/a&gt;</span><br><span class="line">&lt;/nav&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="局部元素布局"><a href="#局部元素布局" class="headerlink" title="局部元素布局"></a>局部元素布局</h3><h4 id="设置边距-默认为10px外边距-。"><a href="#设置边距-默认为10px外边距-。" class="headerlink" title="设置边距  (默认为10px外边距)。"></a>设置边距  (默认为10px外边距)。</h4><p><code>.mui-content-padded</code></p>
+<h4 id="设置元素为内联块，内联，块对象"><a href="#设置元素为内联块，内联，块对象" class="headerlink" title="设置元素为内联块，内联，块对象"></a>设置元素为内联块，内联，块对象</h4><p><code>.mui-inlineblock  .mui-inline   .mui-block</code></p>
+<h4 id="浮动"><a href="#浮动" class="headerlink" title="浮动"></a>浮动</h4><p><code>.mui-clearfix  .mui-pull-left   .mui-pull-right</code></p>
+<h4 id="OS环境判断多平台适配："><a href="#OS环境判断多平台适配：" class="headerlink" title="OS环境判断多平台适配："></a>OS环境判断多平台适配：</h4><blockquote>
+<p>mui会通过.mui.os.*方法判断环境，将.mui-plus，.mui-plus-stream，.mui-ios，.mui-android，.mui-wechat，.mui-ios-version，.mui-android-version，.mui-wechat-version绑定在document.body.classList中，我们可以通过这些样式类判断当前的运行判断，于是可以做出一些适配，如：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;mui-input-row mui-plus-visible&quot;&gt;</span><br><span class="line">    &lt;label&gt;mui-plus-visible&lt;/label&gt;</span><br><span class="line">    &lt;input type=&quot;text&quot; class=&quot;mui-input-speech mui-input-clear&quot; placeholder=&quot;我在web环境下隐藏5+环境下显示&quot;&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;mui-input-row mui-plus-hidden&quot;&gt;</span><br><span class="line">    &lt;label&gt;mui-plus-hidden&lt;/label&gt;</span><br><span class="line">    &lt;input type=&quot;text&quot; class=&quot;mui-input-clear&quot; placeholder=&quot;我在web环境下显示5+环境下隐藏&quot;&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>mui中默认在plus环境下和微信环境下设置了样式几个样式：</p>
+</blockquote>
+<ol>
+<li>mui-plus-visible：在plus环境下显示，非plsu环境下隐藏</li>
+<li>mui-wechat-visible：在wechat环境下显示，非wechat环境下隐藏</li>
+<li>mui-plus-hidden：在plus环境下隐藏，非plsu环境下显示</li>
+<li>mui-wechat-hidden：在wechat环境下隐藏，非wechat环境下显示</li>
+</ol>
+<h4 id="栅格系统布局"><a href="#栅格系统布局" class="headerlink" title="栅格系统布局"></a>栅格系统布局</h4><p><code>.mui-row  mui-col-xs-4 mui-col-sm-3</code></p>
+<h4 id="区域滚动布局-需手动设置高度，否者滚动区域没有高度"><a href="#区域滚动布局-需手动设置高度，否者滚动区域没有高度" class="headerlink" title="区域滚动布局(需手动设置高度，否者滚动区域没有高度)"></a>区域滚动布局(需手动设置高度，否者滚动区域没有高度)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;mui-scroll-wrapper&quot;&gt;</span><br><span class="line">	&lt;div class=&quot;mui-scroll&quot;&gt;</span><br><span class="line">		&lt;!--这里放置真实显示的DOM内容--&gt;</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>// 常用配置项</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">var options = &#123;</span><br><span class="line">	scrollY: true, //是否竖向滚动</span><br><span class="line">	scrollX: false, //是否横向滚动</span><br><span class="line">	startX: 0, //初始化时滚动至x</span><br><span class="line">	startY: 0, //初始化时滚动至y</span><br><span class="line">	indicators: true, //是否显示滚动条</span><br><span class="line">	deceleration:0.0006 //阻尼系数,系数越小滑动越灵敏</span><br><span class="line">	bounce: true, //是否启用回弹</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>eg：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mui(&apos;.mui-scroll-wrapper&apos;).scroll(&#123;</span><br><span class="line">	deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>手动设置高度：<br>一般在scroll控件最外面设置div为绝对定位，设置top,bottom,left,right值，为了方便，mui默认设置有个全屏类.mui-fullscreen。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">.mui-fullscreen &#123;</span><br><span class="line">	position: absolute;</span><br><span class="line">	top: 0;</span><br><span class="line">	right: 0;</span><br><span class="line">	bottom: 0;</span><br><span class="line">	left: 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="Mui常用配置"><a href="#Mui常用配置" class="headerlink" title="Mui常用配置"></a>Mui常用配置</h2><h3 id="mui-openWindow配置（最好是通过URL传参数，使用extras有兼容性问题）"><a href="#mui-openWindow配置（最好是通过URL传参数，使用extras有兼容性问题）" class="headerlink" title="mui.openWindow配置（最好是通过URL传参数，使用extras有兼容性问题）"></a>mui.openWindow配置（最好是通过URL传参数，使用extras有兼容性问题）</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">mui.openWindow(&#123;</span><br><span class="line">	url: name + &apos;.html?id=&apos; + id,</span><br><span class="line">	id: name + &apos;.html?id=&apos; + id,</span><br><span class="line">	styles: &#123;</span><br><span class="line">		popGesture: &apos;close&apos;,//苹果返回</span><br><span class="line">	&#125;,</span><br><span class="line">	extras: &#123;</span><br><span class="line">		//自定义扩展参数，可以用来处理页面间传值,仅仅首次创建有自定义扩展参数</span><br><span class="line">	&#125;,</span><br><span class="line">	createNew: false, //是否重复创建同样id的webview，默认为false:不重复创建，直接显示</span><br><span class="line">	show: &#123;</span><br><span class="line">		autoShow: true, //页面loaded事件发生后自动显示，默认为true</span><br><span class="line">		aniShow: &apos;slide-in-right&apos;, //页面显示动画，默认为”slide-in-right“；</span><br><span class="line">		duration: 200, //页面动画持续时间，Android平台默认100毫秒，iOS平台默认200毫秒；</span><br><span class="line">		event: &apos;titleUpdate&apos;, //页面显示时机，默认为titleUpdate事件时显示</span><br><span class="line">		extras: &#123;&#125; //窗口动画是否使用图片加速</span><br><span class="line">				&#125;,</span><br><span class="line">		waiting: &#123;</span><br><span class="line">		autoShow: true, //自动显示等待框，默认为true</span><br><span class="line">		title: &apos;加载中&apos;, //等待对话框上显示的提示内容</span><br><span class="line">		options: &#123;</span><br><span class="line">						//width:120,等待框背景区域宽度，默认根据内容自动计算合适宽度</span><br><span class="line">						//height:100,等待框背景区域高度，默认根据内容自动计算合适高度</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h3 id="单webview上拉加载下拉刷新配置"><a href="#单webview上拉加载下拉刷新配置" class="headerlink" title="单webview上拉加载下拉刷新配置"></a>单webview上拉加载下拉刷新配置</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">mui.init(&#123;</span><br><span class="line">	swipeBack: false,</span><br><span class="line">	pullRefresh: &#123;</span><br><span class="line">		container: &apos;#pullrefresh&apos;,</span><br><span class="line">		down: &#123;</span><br><span class="line">			style: &apos;circle&apos;,</span><br><span class="line">			offset: &apos;44px&apos;,</span><br><span class="line">			contentdown: &quot;下拉可以刷新&quot;, //可选，在下拉可刷新状态时，下拉刷新控件上显示的标题内容</span><br><span class="line">		    contentover: &quot;释放立即刷新&quot;, //可选，在释放可刷新状态时，下拉刷新控件上显示的标题内容</span><br><span class="line">			contentrefresh: &quot;正在刷新...&quot;, //可选，正在刷新状态时，下拉刷新控件上显示的标题内容</span><br><span class="line">			auto: false,</span><br><span class="line">			callback: function()&#123;&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		up: &#123;</span><br><span class="line">			auto: false,</span><br><span class="line">			contentrefresh: &apos;正在加载...&apos;,</span><br><span class="line">			callback: function()&#123;&#125;</span><br><span class="line"></span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h3 id="下拉刷新和上拉加载实现-下拉刷新中有重置上拉加载的方法"><a href="#下拉刷新和上拉加载实现-下拉刷新中有重置上拉加载的方法" class="headerlink" title="下拉刷新和上拉加载实现(下拉刷新中有重置上拉加载的方法)"></a>下拉刷新和上拉加载实现(下拉刷新中有重置上拉加载的方法)</h3><blockquote>
+<p>下拉刷新</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">function() &#123; //下拉刷新具体业务实现				</span><br><span class="line">	setTimeout(function() &#123;	</span><br><span class="line">		index = 1;</span><br><span class="line">		alert(&apos; 下拉刷新&apos;);			</span><br><span class="line">		mui(&apos;#pullrefresh&apos;).pullRefresh().refresh(true)			</span><br><span class="line">		mui(&apos;#pullrefresh&apos;).pullRefresh().endPullupToRefresh(false); //参数为true代表没有更多数据了。		</span><br><span class="line">		mui(&apos;#pullrefresh&apos;).pullRefresh().endPulldownToRefresh(); //refresh completed</span><br><span class="line">	&#125;, 500);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>上拉加载</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">function() &#123; //上拉加载具体业务实现</span><br><span class="line">	setTimeout(function() &#123;</span><br><span class="line">		index++</span><br><span class="line">		mui(&apos;#pullrefresh&apos;).pullRefresh().endPullupToRefresh(index&gt;pageAll); //参数为true代表没有更多数据了。</span><br><span class="line">		if(index&lt;=pageAll)&#123;</span><br><span class="line">			alert(&apos; 上拉加载&apos;);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;, 500);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="Ajax请求"><a href="#Ajax请求" class="headerlink" title="Ajax请求"></a>Ajax请求</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">mui.ajax(&#123;</span><br><span class="line">	url: url,//请求地址</span><br><span class="line">	data: data,//请求参数</span><br><span class="line">	async: true,</span><br><span class="line">	dataType: &apos;json&apos;,</span><br><span class="line">	crossDomain: true, //强制使用5+跨域</span><br><span class="line">	type: &apos;post&apos;,</span><br><span class="line">	timeout: 28000,</span><br><span class="line">	headers: &#123;&apos;Content-Type&apos;: &apos;application/x-www-form-urlencoded&#125;,</span><br><span class="line">	beforeSend: function()&#123;&#125;,</span><br><span class="line">	success: function()&#123;&#125;,</span><br><span class="line">	error: function(XMLHttpRequest, textStatus, errorThrown) &#123;&#125;,</span><br><span class="line">	complete: function()&#123;&#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h3 id="Mui与jq冲突解决办法"><a href="#Mui与jq冲突解决办法" class="headerlink" title="Mui与jq冲突解决办法"></a>Mui与jq冲突解决办法</h3><p><code>var $j = jQuery.noConflict(true);</code></p>
+<h3 id="Mui传值"><a href="#Mui传值" class="headerlink" title="Mui传值"></a>Mui传值</h3><blockquote>
+<p>传递参数</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">mui.fire(webview, &apos;show&apos;, &#123;</span><br><span class="line">	id: &apos;id&apos;, //传往对应webview的值  </span><br><span class="line">	name: &apos;name2&apos; //传往对应webview的值  </span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<blockquote>
+<pre><code>接受参数
+</code></pre></blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">window.addEventListener(&apos;show&apos;, function(event) &#123;</span><br><span class="line">	//获得事件参数  </span><br><span class="line">	var id = event.detail.id;</span><br><span class="line">	var name = event.detail.name;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h3 id="Div模式下顶部渐变配置"><a href="#Div模式下顶部渐变配置" class="headerlink" title="Div模式下顶部渐变配置"></a>Div模式下顶部渐变配置</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;mui-scroll-wrapper&quot;&gt;</span><br><span class="line">	&lt;div class=&quot;mui-scroll&quot;&gt;</span><br><span class="line">		&lt;!--这里放置真实显示的DOM内容--&gt;</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;header class=&quot;mui-bar mui-bar-transparent&quot;&gt;</span><br><span class="line">	&lt;a class=&quot;mui-action-back mui-icon mui-icon-left-nav mui-pull-left&quot;&gt;&lt;/a&gt;</span><br><span class="line">	&lt;h1 class=&quot;mui-title&quot;&gt;产品信息&lt;/h1&gt;</span><br><span class="line">&lt;/header&gt;</span><br><span class="line">&lt;div class=&quot;mui-content&quot;&gt;</span><br><span class="line">	&lt;!--背景图片--&gt;</span><br><span class="line">	&lt;img id=&quot;img1&quot; src=&quot;../../img/homePage/detailBg.png&quot;&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>常用配置项<br>顶部渐变参数</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">mui(&apos;.mui-bar-transparent&apos;).transparent(&#123;</span><br><span class="line">	top: 0,</span><br><span class="line">	offset: 54,</span><br><span class="line">	duration: 16,</span><br><span class="line">	scrollby: document.querySelector(&apos;.mui-scroll-wrapper&apos;) || window</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h3 id="Mui返回时刷新"><a href="#Mui返回时刷新" class="headerlink" title="Mui返回时刷新"></a>Mui返回时刷新</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var wobj = plus.webview.getWebviewById(opener);</span><br><span class="line">wobj.reload(true);</span><br></pre></td></tr></table></figure>
+<h3 id="Mui中判断是否断网"><a href="#Mui中判断是否断网" class="headerlink" title="Mui中判断是否断网"></a>Mui中判断是否断网</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">if(window.plus &amp;&amp; plus.networkinfo.getCurrentType() === plus.networkinfo.CONNECTION_NONE) &#123;</span><br><span class="line">	plus.nativeUI.toast(&apos;似乎已断开与互联网的连接&apos;, &#123;</span><br><span class="line">		verticalAlign: &apos;top&apos;</span><br><span class="line">	&#125;);</span><br><span class="line">	return;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="mui常用函数封装"><a href="#mui常用函数封装" class="headerlink" title="mui常用函数封装"></a>mui常用函数封装</h2><h3 id="常用Picker"><a href="#常用Picker" class="headerlink" title="常用Picker"></a>常用Picker</h3><blockquote>
+<p>poppicker组件依赖mui.picker.js/.css mui.poppicker.js/.css请务必在mui.js/css后中引用,也可统一引用 压缩版本:mui.picker.min.js<br>备注：可通过 instance.pickers[index] 拿到指定层级的实例，然后通过setSelectedIndex()和setSelectedValue()两个方法,设定指定层级的选中项</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">var picker = new mui.PopPicker();</span><br><span class="line">picker.setData([&#123;</span><br><span class="line">    value: &quot;first&quot;,</span><br><span class="line">    text: &quot;第一项&quot;</span><br><span class="line">&#125;, &#123;</span><br><span class="line">    value: &quot;second&quot;,</span><br><span class="line">    text: &quot;第一项&quot;</span><br><span class="line">&#125;, &#123;</span><br><span class="line">    value: &quot;third&quot;,</span><br><span class="line">    text: &quot;第三项&quot;</span><br><span class="line">&#125;, &#123;</span><br><span class="line">    value: &quot;fourth&quot;,</span><br><span class="line">    text: &quot;第四项&quot;</span><br><span class="line">&#125;, &#123;</span><br><span class="line">    value: &quot;fifth&quot;,</span><br><span class="line">    text: &quot;第五项&quot;</span><br><span class="line">&#125;])</span><br><span class="line">//picker.pickers[0].setSelectedIndex(4, 2000);</span><br><span class="line">picker.pickers[0].setSelectedValue(&apos;fourth&apos;, 2000);</span><br><span class="line">picker.show(function(SelectedItem) &#123;</span><br><span class="line">	picker.dispose();</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h3 id="地址选择器"><a href="#地址选择器" class="headerlink" title="地址选择器"></a>地址选择器</h3><blockquote>
+<p>poppicker组件依赖mui.picker.js/.css mui.poppicker.js/.css请务必在mui.js/css后中引用,也可统一引用 压缩版本:mui.picker.min.js</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">var picker = new mui.PopPicker(&#123;</span><br><span class="line">    layer: 2//设置几级联动</span><br><span class="line">&#125;);</span><br><span class="line">picker.setData([&#123;</span><br><span class="line">    value: &apos;110000&apos;,</span><br><span class="line">    text: &apos;北京市&apos;,</span><br><span class="line">    children: [&#123;</span><br><span class="line">            value: &quot;110101&quot;,</span><br><span class="line">            text: &quot;东城区&quot;</span><br><span class="line">    &#125;]</span><br><span class="line">&#125;, &#123;</span><br><span class="line">    value: &apos;120000&apos;,</span><br><span class="line">    text: &apos;天津市&apos;,</span><br><span class="line">    children: [&#123;</span><br><span class="line">        value: &quot;120101&quot;,</span><br><span class="line">        text: &quot;和平区&quot;</span><br><span class="line">    &#125;, &#123;</span><br><span class="line">        value: &quot;120102&quot;,</span><br><span class="line">        text: &quot;河东区&quot;</span><br><span class="line">    &#125;, &#123;</span><br><span class="line">        value: &quot;120104&quot;,</span><br><span class="line">        text: &quot;南开区&quot;</span><br><span class="line">    &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;])</span><br><span class="line">picker.pickers[0].setSelectedIndex(1);</span><br><span class="line">picker.pickers[1].setSelectedIndex(1);</span><br><span class="line">picker.show(function(SelectedItem) &#123;</span><br><span class="line">	picker.dispose()；</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h3 id="时间选择器"><a href="#时间选择器" class="headerlink" title="时间选择器"></a>时间选择器</h3><blockquote>
+<p>poppicker组件依赖mui.picker.js/.css mui.poppicker.js/.css请务必在mui.js/css后中引用,也可统一引用 压缩版本:mui.picker.min.js</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">var dtPicker = new mui.DtPicker(); </span><br><span class="line">var options = &#123;</span><br><span class="line">	type: &quot;date&quot;, //设置日历初始视图模式  详情参考mui</span><br><span class="line">	beginDate: new Date(year, month, day), //设置开始日期 </span><br><span class="line">&#125;;</span><br><span class="line">dtPicker.show(function (rs) &#123; </span><br><span class="line">   /*</span><br><span class="line">	* rs.value 拼合后的 value</span><br><span class="line">	* rs.text 拼合后的 text</span><br><span class="line">	* rs.y 年，可以通过 rs.y.vaue 和 rs.y.text 获取值和文本</span><br><span class="line">	* rs.m 月，用法同年</span><br><span class="line">	* rs.d 日，用法同年</span><br><span class="line">	* rs.h 时，用法同年</span><br><span class="line">	* rs.i 分（minutes 的第二个字母），用法同年</span><br><span class="line">	*/</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h3 id="actionSheet-封装"><a href="#actionSheet-封装" class="headerlink" title="actionSheet 封装"></a>actionSheet 封装</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">function()&#123;		</span><br><span class="line">	var btnArray = [&#123;title:&quot;选取现有的&quot;&#125;];</span><br><span class="line">	plus.nativeUI.actionSheet( &#123;</span><br><span class="line">		title:&quot;选择照片&quot;,</span><br><span class="line">		cancel:&quot;取消&quot;,</span><br><span class="line">		buttons:btnArray</span><br><span class="line">	&#125;, function(e)&#123;</span><br><span class="line">		var index = e.index;</span><br><span class="line">		switch (index)&#123;</span><br><span class="line">			case 0:</span><br><span class="line">				//取消</span><br><span class="line">				function()&#123;&#125;</span><br><span class="line">				break;</span><br><span class="line">			case 1:</span><br><span class="line">				//选择照片</span><br><span class="line">				function()&#123;&#125;</span><br><span class="line">				break;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125; );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="选取照片"><a href="#选取照片" class="headerlink" title="选取照片"></a>选取照片</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">function()&#123;//获取图片元素</span><br><span class="line">	plus.gallery.pick(function(path) &#123;</span><br><span class="line">		var ele = document.getElementById(&quot;imgUp&quot;);</span><br><span class="line">		ele.innerHTML = &apos;&apos;;</span><br><span class="line">		var img = new Image();</span><br><span class="line">		img.src = path;</span><br><span class="line">		ele.appendChild(img);	            </span><br><span class="line">		upload();</span><br><span class="line">	&#125;, function() &#123;&#125;, &#123;</span><br><span class="line">		filter: &quot;image&quot;</span><br><span class="line">	&#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function upload()&#123;// 上传文件</span><br><span class="line">	var files = document.querySelector(&apos;#imgUp&apos;);</span><br><span class="line">	var wt=plus.nativeUI.showWaiting();</span><br><span class="line">	var server = &quot;http://192.168.2.01:3000/xxx/UploadFile&quot;;</span><br><span class="line">    var task=plus.uploader.createUpload(server,&#123;method:&quot;POST&quot;&#125;,function(t,status)&#123; //上传完成</span><br><span class="line">        if(status==200)&#123;</span><br><span class="line">        	var data = &#123;&#125;;</span><br><span class="line">        	data.photo = t.responseText.split(&apos;,&apos;)[0]+t.responseText.split(&apos;,&apos;)[1];</span><br><span class="line">            console.log(&quot;上传成功：&quot;+t.responseText);</span><br><span class="line">            	Ajax.then(function(r)&#123;//请求&#125;)</span><br><span class="line">            wt.close(); //关闭等待提示按钮</span><br><span class="line">        &#125;else&#123;</span><br><span class="line">            console.log(&quot;上传失败：&quot;+status);</span><br><span class="line">            wt.close();//关闭等待提示按钮</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">    //添加其他参数</span><br><span class="line">    task.addData(&quot;name&quot;,&quot;test&quot;);</span><br><span class="line">    task.addFile(files.src,&#123;key:&quot;dddd&quot;&#125;);</span><br><span class="line">    task.start();				</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="Mui问题BUG解决办法"><a href="#Mui问题BUG解决办法" class="headerlink" title="Mui问题BUG解决办法"></a>Mui问题BUG解决办法</h2><h3 id="IOS端键盘弹出后顶部导航栏乱飞"><a href="#IOS端键盘弹出后顶部导航栏乱飞" class="headerlink" title="IOS端键盘弹出后顶部导航栏乱飞"></a>IOS端键盘弹出后顶部导航栏乱飞</h3><blockquote>
+<p>HTML结构</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;mui-scroll-wrapper mui-content&quot;&gt;</span><br><span class="line">	&lt;div class=&quot;mui-scroll&quot;&gt;</span><br><span class="line">		&lt;!--这里放置真实显示的DOM内容--&gt;</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>JS</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">mui(&apos;.mui-scroll-wrapper&apos;).scroll(&#123;</span><br><span class="line">	deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006</span><br><span class="line">&#125;);</span><br><span class="line">if(window.plus &amp;&amp; mui.os.ios)&#123;</span><br><span class="line">	var ws = plus.webview.currentWebview();</span><br><span class="line">	ws.setStyle(&#123;</span><br><span class="line">		softinputMode:&apos;adjustResize&apos;</span><br><span class="line">	&#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="IOS端由BUG1引起的光标错位"><a href="#IOS端由BUG1引起的光标错位" class="headerlink" title="IOS端由BUG1引起的光标错位"></a>IOS端由BUG1引起的光标错位</h3><blockquote>
+<p> 修改mui.js如下添加判断  ios端关闭’translate3d</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">_getTranslateStr: function(x, y) &#123;</span><br><span class="line">	if (this.options.hardwareAccelerated &amp;&amp; mui.os.android) &#123;</span><br><span class="line">	return &apos;translate3d(&apos; + x + &apos;px,&apos; + y + &apos;px,0px) &apos; + this.translateZ;</span><br><span class="line">	&#125;</span><br><span class="line">	return &apos;translate(&apos; + x + &apos;px,&apos; + y + &apos;px) &apos;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="Mui结合vue的方案"><a href="#Mui结合vue的方案" class="headerlink" title="Mui结合vue的方案"></a>Mui结合vue的方案</h2><h3 id="在vue中使用picker封装-单个picker-（结合BUG1，-BUG2方案使用）"><a href="#在vue中使用picker封装-单个picker-（结合BUG1，-BUG2方案使用）" class="headerlink" title="在vue中使用picker封装(单个picker)（结合BUG1， BUG2方案使用）"></a>在vue中使用picker封装(单个picker)（结合BUG1， BUG2方案使用）</h3><blockquote>
+<p>备注：需在mui.js中picker取消和蒙版消失处添加setTimeout(function(){a.panel.style.display=”none”},350)  解决键盘弹出后会重新计算webview导致picker出现的问题</p>
+</blockquote>
+<blockquote>
+<p> HTML结构</p>
+</blockquote>
+<p><code>&lt;input type=&quot;text&quot; v-picker=&quot;{name:&#39;picker&#39;}&quot; readonly &gt;</code></p>
+<blockquote>
+<p> JS</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">mounted: function() &#123;</span><br><span class="line">	$j(&apos;.mui-poppicker&apos;).hide();//解决键盘弹出后会重新计算webview导致picker出现的问题</span><br><span class="line">&#125;,</span><br><span class="line">directives:&#123;</span><br><span class="line">	picker:function(el, binding)&#123;</span><br><span class="line">		binding.value.name = new mui.PopPicker();			</span><br><span class="line">		binding.value.name.setData(binding.value.data);</span><br><span class="line">		el.addEventListener(&apos;tap&apos;, function(event) &#123;	</span><br><span class="line">			$j(binding.value.name.panel).show();</span><br><span class="line">			document.activeElement.blur();//失去焦点		</span><br><span class="line">			binding.value.name.show(function(selectItems) &#123;</span><br><span class="line">				$j(el).val(selectItems[0].text);</span><br><span class="line">				setTimeout(function()&#123;</span><br><span class="line">					$j(binding.value.name.panel).hide();</span><br><span class="line">				&#125;,350)</span><br><span class="line">			binding.value.name.hide();</span><br><span class="line">			/*binding.value.name.dispose();只能选一次*/</span><br><span class="line">			&#125;);</span><br><span class="line">		&#125;, false);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="在vue中使用picker封装-多个在1的基础上修改"><a href="#在vue中使用picker封装-多个在1的基础上修改" class="headerlink" title="在vue中使用picker封装(多个在1的基础上修改)"></a>在vue中使用picker封装(多个在1的基础上修改)</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">Ajax.then(function(r)&#123;</span><br><span class="line">	localStorage.relatives_type = JSON.stringify(app.relatives_type)</span><br><span class="line">	localStorage.edu_status = JSON.stringify(app.edu_status)</span><br><span class="line">&#125;)</span><br><span class="line">	</span><br><span class="line">directives:&#123;</span><br><span class="line">	picker: &#123;</span><br><span class="line">		bind:function(el, binding)&#123;</span><br><span class="line">			var data=binding.value.pickerType == 0 ? JSON.parse(localStorage.edu_status): JSON.parse(localStorage.relatives_type);</span><br><span class="line">			binding.value.name = new mui.PopPicker();			</span><br><span class="line">			binding.value.name.setData(data);</span><br><span class="line">			el.addEventListener(&apos;tap&apos;, function(event) &#123;	</span><br><span class="line">				$j(binding.value.name.panel).show();</span><br><span class="line">				document.activeElement.blur();//失去焦点		</span><br><span class="line">				binding.value.name.show(function(selectItems) &#123;</span><br><span class="line">					$j(el).val(selectItems[0].text);</span><br><span class="line">					setTimeout(function()&#123;</span><br><span class="line">						$j(binding.value.name.panel).hide();</span><br><span class="line">					&#125;,350)</span><br><span class="line">				binding.value.name.hide();</span><br><span class="line">				/*binding.value.name.dispose();只能选一次*/</span><br><span class="line">				&#125;);</span><br><span class="line">			&#125;, false);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="在vue中使用-style"><a href="#在vue中使用-style" class="headerlink" title="在vue中使用:style"></a>在vue中使用:style</h3><p><code>:style=&quot;{backgroundImage: &#39;url(&#39;+c.imageUrl+&#39;)&#39;}&quot;</code>    </p>
+<h3 id="在vue做版本更新"><a href="#在vue做版本更新" class="headerlink" title="在vue做版本更新"></a>在vue做版本更新</h3><h4 id="本地JS"><a href="#本地JS" class="headerlink" title="本地JS"></a>本地JS</h4><blockquote>
+<ul>
+<li>配置</li>
+<li>不能在vue里面创建  只能在外面创建</li>
+</ul>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var server=&quot;http://www.xrtxdgs.com/XRT/static/version/version.json&quot;,//获取升级描述文件服务器地址</span><br><span class="line">localDir=&quot;update&quot;,localFile=&quot;version.json&quot;,//本地保存升级描述目录和文件名</span><br><span class="line">keyUpdate=&quot;updateCheck&quot;,//取消升级键名</span><br><span class="line">keyAbort=&quot;updateAbort&quot;,//忽略版本键名</span><br><span class="line">checkInterval=604800000,//升级检查间隔，单位为ms,7天为7*24*60*60*1000=604800000, 如果每次启动需要检查设置值为0</span><br><span class="line">dir=null;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li>准备升级操作</li>
+<li>创建升级文件保存目录</li>
+</ul>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">initUpdate:function ()&#123;// 在流应用模式下不需要检测升级操作	</span><br><span class="line">	if(navigator.userAgent.indexOf(&apos;StreamApp&apos;)&gt;=0)&#123;</span><br><span class="line">		return;</span><br><span class="line">	&#125;</span><br><span class="line">	// 打开doc根目录</span><br><span class="line">	plus.io.requestFileSystem( plus.io.PRIVATE_DOC, function(fs)&#123;</span><br><span class="line">		fs.root.getDirectory(localDir, &#123;create:true&#125;,function(entry)&#123;	</span><br><span class="line">			dir = entry;</span><br><span class="line">			app.checkUpdate();</span><br><span class="line">			console.log( &quot;当前现在目录    &quot;+entry.name );</span><br><span class="line">		&#125;, function(e)&#123;</span><br><span class="line">			console.log( &quot;准备升级操作，打开update目录失败：&quot;+e.message );</span><br><span class="line">		&#125;);</span><br><span class="line">	&#125;,function(e)&#123;</span><br><span class="line">		console.log( &quot;准备升级操作，打开doc目录失败：&quot;+e.message );</span><br><span class="line">	&#125;);</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li>检测程序升级</li>
+</ul>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">checkUpdate:function() &#123;</span><br><span class="line">	// 判断升级检测是否过期</span><br><span class="line">	/*var lastcheck = plus.storage.getItem(keyUpdate );</span><br><span class="line">	if ( lastcheck ) &#123;</span><br><span class="line">		var dc = parseInt( lastcheck );</span><br><span class="line">		var dn = (new Date()).getTime();</span><br><span class="line">		if ( dn-dc &lt;checkInterval ) &#123;	// 未超过上次升级检测间隔，不需要进行升级检查</span><br><span class="line">			return;</span><br><span class="line">		&#125;</span><br><span class="line">		// 取消已过期，删除取消标记</span><br><span class="line">		plus.storage.removeItem(keyUpdate );</span><br><span class="line">	&#125;*/</span><br><span class="line">	// 读取本地升级文件</span><br><span class="line">	dir.getFile(localFile, &#123;create:false&#125;, function(fentry)&#123;</span><br><span class="line">		fentry.file( function(file)&#123;</span><br><span class="line">			var reader = new plus.io.FileReader();</span><br><span class="line">			reader.onloadend = function ( e ) &#123;</span><br><span class="line">				/*fentry.remove();*/</span><br><span class="line">				app.getUpdateData();</span><br><span class="line">				var data = null;</span><br><span class="line">				try&#123;</span><br><span class="line">					data=JSON.parse(e.target.result);</span><br><span class="line">				&#125;catch(e)&#123;</span><br><span class="line">					console.log( &quot;读取本地升级文件，数据格式错误！&quot; );</span><br><span class="line">					return;</span><br><span class="line">				&#125;</span><br><span class="line">				app.checkUpdateData( data );</span><br><span class="line">			&#125;</span><br><span class="line">			reader.readAsText(file);</span><br><span class="line">		&#125;, function(e)&#123;</span><br><span class="line">			console.log( &quot;读取本地升级文件，获取文件对象失败：&quot;+e.message );</span><br><span class="line">			fentry.remove();</span><br><span class="line">		&#125; );</span><br><span class="line">	&#125;, function(e)&#123;</span><br><span class="line">		// 失败表示文件不存在，从服务器获取升级数据</span><br><span class="line">		console.log( &quot;本地升级文件不存在,从服务器获取升级数据&quot;);</span><br><span class="line">		app.getUpdateData();</span><br><span class="line">	&#125;);</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li>检查升级数据</li>
+</ul>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">checkUpdateData:function( j )&#123;</span><br><span class="line">	var curVer=plus.runtime.version;</span><br><span class="line">	console.log(curVer)</span><br><span class="line">	inf = j[plus.os.name];</span><br><span class="line">	console.log(JSON.stringify(j[plus.os.name]))</span><br><span class="line">	if ( inf )&#123;</span><br><span class="line">		var srvVer = inf.version;</span><br><span class="line">		// 判断是否存在忽略版本号</span><br><span class="line">		var vabort = plus.storage.getItem( keyAbort );</span><br><span class="line">		if ( vabort &amp;&amp; srvVer==vabort ) &#123;</span><br><span class="line">			// 忽略此版本</span><br><span class="line">			return;</span><br><span class="line">		&#125;</span><br><span class="line">		// 判断是否需要升级</span><br><span class="line">		if ( this.compareVersion(curVer,srvVer) ) &#123;</span><br><span class="line">			// 提示用户是否升级</span><br><span class="line">			plus.nativeUI.confirm( inf.note, function(i)&#123;</span><br><span class="line">				if ( 0==i.index ) &#123;</span><br><span class="line">					plus.runtime.openURL( inf.url );</span><br><span class="line">				&#125; else if ( 1==i.index ) &#123;</span><br><span class="line">					plus.storage.setItem( keyAbort, srvVer );</span><br><span class="line">					plus.storage.setItem( keyUpdate, (new Date()).getTime().toString() );</span><br><span class="line">				&#125; else &#123;</span><br><span class="line">					plus.storage.setItem( keyUpdate, (new Date()).getTime().toString() );</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;, inf.title, [&quot;立即更新&quot;,&quot;跳过此版本&quot;,&quot;取　　消&quot;] );</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li>从服务器获取升级数据</li>
+</ul>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">getUpdateData:function ()&#123;</span><br><span class="line">	var xhr = new plus.net.XMLHttpRequest();</span><br><span class="line">	xhr.onreadystatechange = function () &#123;</span><br><span class="line">        switch ( xhr.readyState ) &#123;</span><br><span class="line">            case 4:</span><br><span class="line">                if ( xhr.status == 200 ) &#123;</span><br><span class="line">                	// 保存到本地文件中</span><br><span class="line">                	dir.getFile( localFile, &#123;create:true&#125;, function(fentry)&#123;</span><br><span class="line">                		fentry.createWriter( function(writer)&#123;</span><br><span class="line">                			writer.onerror = function()&#123;</span><br><span class="line">                				console.log( &quot;获取升级数据，保存文件失败！&quot; );</span><br><span class="line">                			&#125;</span><br><span class="line">                			writer.write( xhr.responseText );</span><br><span class="line">                		&#125;, function(e)&#123;</span><br><span class="line">                			console.log( &quot;获取升级数据，创建写文件对象失败：&quot;+e.message );</span><br><span class="line">                		&#125; );</span><br><span class="line">                	&#125;, function(e)&#123;</span><br><span class="line">                		console.log( &quot;获取升级数据，打开保存文件失败：&quot;+e.message );</span><br><span class="line">                	&#125;);</span><br><span class="line">                &#125; else &#123;</span><br><span class="line">                	console.log( &quot;获取升级数据，联网请求失败：&quot;+xhr.status );</span><br><span class="line">                &#125;</span><br><span class="line">                break;</span><br><span class="line">            default :</span><br><span class="line">                break;</span><br><span class="line">        &#125;</span><br><span class="line">	&#125;</span><br><span class="line">	xhr.open( &quot;GET&quot;, server );</span><br><span class="line">	xhr.send();</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li>比较版本大小，如果新版本nv大于旧版本ov则返回true，否则返回false</li>
+<li>@param {String} ov</li>
+<li>@param {String} nv</li>
+<li>@return {Boolean} </li>
+</ul>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">compareVersion:function ( ov, nv )&#123;</span><br><span class="line">	if ( !ov || !nv || ov==&quot;&quot; || nv==&quot;&quot; )&#123;</span><br><span class="line">		return false;</span><br><span class="line">	&#125;</span><br><span class="line">	var b=false,</span><br><span class="line">	ova = ov.split(&quot;.&quot;,4),</span><br><span class="line">	nva = nv.split(&quot;.&quot;,4);</span><br><span class="line">	for ( var i=0; i&lt;ova.length&amp;&amp;i&lt;nva.length; i++ ) &#123;</span><br><span class="line">		var so=ova[i],no=parseInt(so),sn=nva[i],nn=parseInt(sn);</span><br><span class="line">		if ( nn&gt;no || sn.length&gt;so.length  ) &#123;</span><br><span class="line">			return true;</span><br><span class="line">		&#125; else if ( nn&lt;no ) &#123;</span><br><span class="line">			mui.toast(&apos;暂无更新&apos;)</span><br><span class="line">			return false;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	if ( nva.length&gt;ova.length &amp;&amp; 0==nv.indexOf(ov) ) &#123;</span><br><span class="line">		return true;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="服务器上"><a href="#服务器上" class="headerlink" title="服务器上"></a>服务器上</h4><p><code>var server = serverUrl +&quot;UpdateBsnLicense&quot;;//json服务器路径</code></p>
+<blockquote>
+<ul>
+<li>服务器上面的version.json</li>
+</ul>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;appid&quot;: &quot;App&quot;,</span><br><span class="line">    &quot;iOS&quot;: &#123;</span><br><span class="line">        &quot;version&quot;: &quot;1.0.1&quot;,</span><br><span class="line">        &quot;title&quot;: &quot;1.0.1版本更新&quot;,</span><br><span class="line">        &quot;note&quot;: &quot;新增自动升级检测功能\n新增分享功能演示页面\n新增推送功能演示页面\n&quot;,</span><br><span class="line">        &quot;url&quot;: &quot;itms-apps://itunes.apple.com/cn/app/hello-h5+/id682211190?l=zh&amp;mt=8&quot;</span><br><span class="line">    &#125;,</span><br><span class="line">    &quot;Android&quot;: &#123;</span><br><span class="line">        &quot;version&quot;: &quot;1.0.1&quot;,</span><br><span class="line">        &quot;title&quot;: &quot;1.0.1版本更新&quot;,</span><br><span class="line">        &quot;note&quot;: &quot;新增自动升级检测功能\n新增分享功能演示页面\n新增推送功能演示页面\n&quot;,</span><br><span class="line">        &quot;url&quot;: &quot;http://www.app.com/app/static/version/app.apk&quot;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="在vue中循环中倒计时"><a href="#在vue中循环中倒计时" class="headerlink" title="在vue中循环中倒计时"></a>在vue中循环中倒计时</h3><blockquote>
+<p>HTML</p>
+</blockquote>
+<p><code>&lt;div v-time-countdown=&quot;{getTime:getTimeCoutDown,time:&#39;2017-10-10&#39;}&quot;&gt;&lt;/div&gt;</code></p>
+<blockquote>
+<p>JS</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">getTimeCoutDown:function(time)&#123;</span><br><span class="line">	var leftTime = time;</span><br><span class="line">	if(leftTime&lt;=0)&#123;</span><br><span class="line">		return (0 + &quot;天&quot; + 0 +&quot;小时&quot; + 0 +&quot;分&quot; + 0 +&quot;秒&quot;);</span><br><span class="line">	else&#123;</span><br><span class="line">		var days = parseInt(leftTime / 1000 / 60 / 60 / 24 , 10); //计算剩余的天数 </span><br><span class="line">		var hours = parseInt(leftTime / 1000 / 60 / 60 % 24 , 10); //计算剩余的小时 </span><br><span class="line">		var minutes = parseInt(leftTime / 1000 / 60 % 60, 10);//计算剩余的分钟 </span><br><span class="line">		var seconds = parseInt(leftTime / 1000 % 60, 10);//计算剩余的秒数 </span><br><span class="line">		days = checkTime(days); </span><br><span class="line">		hours = checkTime(hours); </span><br><span class="line">		minutes = checkTime(minutes); </span><br><span class="line">		seconds = checkTime(seconds); </span><br><span class="line">		function checkTime(i)&#123; //将0-9的数字前面加上0，例1变为01 </span><br><span class="line">		if(i&lt;10) </span><br><span class="line">		&#123; </span><br><span class="line">			i = &quot;0&quot; + i; </span><br><span class="line">		&#125; </span><br><span class="line">			return i; </span><br><span class="line">		&#125; </span><br><span class="line">		return (&quot;&lt;b&gt;倒计时：&lt;/b&gt;&lt;span&gt;&quot;+days+&quot;&lt;/span&gt;日&lt;span&gt;&quot;+hours+&quot;&lt;/span&gt;小时&lt;span&gt;&quot;+minutes+&quot;&lt;/span&gt;分&quot;);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">directives:&#123;</span><br><span class="line">	&apos;time-countdown&apos;:&#123;</span><br><span class="line">		bind:function(el, binding)&#123;</span><br><span class="line">			el.innerHTML = binding.value.getTime(new Date(binding.value.time) - new Date())	</span><br><span class="line">			setInterval(function()&#123;</span><br><span class="line">				now = new Date();</span><br><span class="line">				el.innerHTML = binding.value.getTime(new Date(binding.value.time) - now)	;</span><br><span class="line">			&#125;,1000);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="在vue中使用上传图片"><a href="#在vue中使用上传图片" class="headerlink" title="在vue中使用上传图片"></a>在vue中使用上传图片</h3><blockquote>
+<p>CSS</p>
+</blockquote>
+<blockquote>
+<p>HTML</p>
+</blockquote>
+<blockquote>
+<p>JS</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">new Vue(&#123;</span><br><span class="line">	el:&apos;#app&apos;,</span><br><span class="line">	data:&#123;</span><br><span class="line">		sendInfo:&#123;</span><br><span class="line">			imgUrl:&apos;&apos;</span><br><span class="line">		&#125;,</span><br><span class="line">		nativeUrl:&apos;&apos;</span><br><span class="line">	&#125;,</span><br><span class="line">	methods:&#123;</span><br><span class="line">		upload:function()&#123;//获取图片元素</span><br><span class="line">			plus.gallery.pick(function(path) &#123;     </span><br><span class="line">				upload(path);</span><br><span class="line">			&#125;, function() &#123;&#125;, &#123;</span><br><span class="line">				filter: &quot;image&quot;</span><br><span class="line">			&#125;);</span><br><span class="line">		&#125;,</span><br><span class="line">		upload:function(path)&#123;// 上传文件</span><br><span class="line">			var wt=plus.nativeUI.showWaiting();</span><br><span class="line">			var server = &quot;http://192.168.2.01:3000/xxx/UploadFile&quot;;</span><br><span class="line">		    var task=plus.uploader.createUpload(server,&#123;method:&quot;POST&quot;&#125;,function(t,status)&#123; //上传完成</span><br><span class="line">		        if(status==200)&#123;</span><br><span class="line">		        	var data = &#123;&#125;;</span><br><span class="line">		        	data.photo = t.responseText.split(&apos;,&apos;)[0]+t.responseText.split(&apos;,&apos;)[1];</span><br><span class="line">		            console.log(&quot;上传成功：&quot;+t.responseText);</span><br><span class="line">		            	Ajax.then(function(r)&#123;//请求&#125;)</span><br><span class="line">		            wt.close(); //关闭等待提示按钮</span><br><span class="line">		        &#125;else&#123;</span><br><span class="line">		            console.log(&quot;上传失败：&quot;+status);</span><br><span class="line">		            wt.close();//关闭等待提示按钮</span><br><span class="line">		        &#125;</span><br><span class="line">		    &#125;);</span><br><span class="line">		    //添加其他参数</span><br><span class="line">		    task.addData(&quot;name&quot;,&quot;test&quot;);</span><br><span class="line">		    task.addFile(files.src,&#123;key:&quot;dddd&quot;&#125;);</span><br><span class="line">		    task.start();				</span><br><span class="line">		&#125;		</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2018-04-09T14:20:16.091Z" itemprop="dateUpdated">2018-04-09 22:20:16</time>
+</span><br>
+
+
+        
+        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2017/11/15/mui-vue结合使用/" target="_blank" rel="external">https://liuhoi.github.io/2017/11/15/mui-vue结合使用/</a>
+        
+    </div>
+    
+    <footer>
+        <a href="https://liuhoi.github.io">
+            <img src="/img/cat1.JPG" alt="刘辉">
+            刘辉
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/">JavaScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mui/">mui</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue/">vue</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://liuhoi.github.io/2017/11/15/mui-vue结合使用/&title=《mui+vue结合使用》 — 刘辉的博客&pic=https://liuhoi.github.io/img/cat1.JPG" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://liuhoi.github.io/2017/11/15/mui-vue结合使用/&title=《mui+vue结合使用》 — 刘辉的博客&source=刘辉的博客" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://liuhoi.github.io/2017/11/15/mui-vue结合使用/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《mui+vue结合使用》 — 刘辉的博客&url=https://liuhoi.github.io/2017/11/15/mui-vue结合使用/&via=https://liuhoi.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://liuhoi.github.io/2017/11/15/mui-vue结合使用/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2017/11/04/ios-证书申请和APP上架/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">ios 证书申请和APP上架</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢大爷~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.JPG" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="/img/wechat.JPG" data-alipay="/img/alipay.JPG">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>刘辉 &copy; 2015 - 2018</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://liuhoi.github.io/2017/11/15/mui-vue结合使用/&title=《mui+vue结合使用》 — 刘辉的博客&pic=https://liuhoi.github.io/img/cat1.JPG" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://liuhoi.github.io/2017/11/15/mui-vue结合使用/&title=《mui+vue结合使用》 — 刘辉的博客&source=刘辉的博客" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://liuhoi.github.io/2017/11/15/mui-vue结合使用/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《mui+vue结合使用》 — 刘辉的博客&url=https://liuhoi.github.io/2017/11/15/mui-vue结合使用/&via=https://liuhoi.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://liuhoi.github.io/2017/11/15/mui-vue结合使用/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACKElEQVR42u3aS27DMAwFwNz/0ummiwKJ00fSDmBptAqaVPZoQfCjxyNez5f1+vejX/79trrbyQsDA+O2jOfHlTx4/pT8uYdUDAyMDRhHDz76XA2a+W+SY8LAwMD4zMhTwASQf4uBgYHRC7jV/5ofHwYGxs6MJOFLWmafi9heOD65FsfAwLghI2+Wff/zJfMNDAyMWzEmzfpqoXvF+/zujIGBsTQjD3BJu7+XAvbGohgYGPswqpe68vZZXnBWx5/RGWNgYGzGqDbr88bcJPUsB1wMDIzbMpL2/aT1nwTlswpgDAyMVRnV0DkvRyeBu3lbBAMDY1HGCZG7OACoVqMYGBh7Miat+TwE91LJf3bAwMDYgNFrkyWd+SRoTt4BAwNjB0aSkPVSvUnrrVniYmBgLM3Ih4X55YneOGF++QwDA2MfRh7m8qSwuk8PjIGBsTYjSfWql7SqV8F6LT8MDIy1GYWUKz6P3g55CH5zEBgYGEsz8jFhPrDMW2b5oUQ7Y2BgbMDopW55YXlFcfsm4GJgYCzNSFZ1GFC9IjYqmzEwMDZgVEvWajqYgKtXOiotRAwMjLsynsV17rWMpHCNqBgYGEszJu37POGrvlz1yDAwMHZgTILs/LpGYUg5abdhYGAswUjC5aTd1hsnlEtZDAwMjFNLzXxUELXzMDAwMAYDgHmTLiqeMTAwNmDkBWd1kFm9ctEMxxgYGEszqtcsrhteXj7UxMDAuB/jB/PFA/FR7Pb+AAAAAElFTkSuQmCC" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '付出努力才会得到回报！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '刘辉的博客!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
