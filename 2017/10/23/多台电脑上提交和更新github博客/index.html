@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>多台电脑上提交和更新github博客 | 刘辉的博客 | 付出努力才会得到回报</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="hexo,github,git">
+    <meta name="description" content="第一步：git branch 查看当前分支情况git branch  //查看当前分支情况                                                                                             查看分支情况             我现在有2个分支  master和hexo 第二步：git branch 分支名，新建">
+<meta name="keywords" content="hexo,github,git">
+<meta property="og:type" content="article">
+<meta property="og:title" content="多台电脑上提交和更新github博客">
+<meta property="og:url" content="https://liuhoi.github.io/2017/10/23/多台电脑上提交和更新github博客/index.html">
+<meta property="og:site_name" content="刘辉的博客">
+<meta property="og:description" content="第一步：git branch 查看当前分支情况git branch  //查看当前分支情况                                                                                             查看分支情况             我现在有2个分支  master和hexo 第二步：git branch 分支名，新建">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://liuhoi.github.io/2017/10/23/多台电脑上提交和更新github博客/seeBranch.jpg">
+<meta property="og:image" content="https://liuhoi.github.io/2017/10/23/多台电脑上提交和更新github博客/seeBranch.jpg">
+<meta property="og:image" content="https://liuhoi.github.io/2017/10/23/多台电脑上提交和更新github博客/seeBranch.jpg">
+<meta property="og:updated_time" content="2018-04-09T14:20:16.106Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="多台电脑上提交和更新github博客">
+<meta name="twitter:description" content="第一步：git branch 查看当前分支情况git branch  //查看当前分支情况                                                                                             查看分支情况             我现在有2个分支  master和hexo 第二步：git branch 分支名，新建">
+<meta name="twitter:image" content="https://liuhoi.github.io/2017/10/23/多台电脑上提交和更新github博客/seeBranch.jpg">
+    
+        <link rel="alternate" type="application/atom+xml" title="刘辉的博客" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/img/cat1.JPG">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/cat1.JPG">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">刘辉</h5>
+          <a href="mailto:pk3845473@163.com" title="pk3845473@163.com" class="mail">pk3845473@163.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                归档
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://liuhoi.github.io/" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">多台电脑上提交和更新github博客</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">多台电脑上提交和更新github博客</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2017-10-23T12:43:39.000Z" itemprop="datePublished" class="page-time">
+  2017-10-23
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/blog/">blog</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#第一步：git-branch-查看当前分支情况"><span class="post-toc-number">1.</span> <span class="post-toc-text">第一步：git branch 查看当前分支情况</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#第二步：git-branch-分支名，新建一个自己的分支"><span class="post-toc-number">2.</span> <span class="post-toc-text">第二步：git branch 分支名，新建一个自己的分支</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#第三步：git-checkout-分支名，切换到新建的分支"><span class="post-toc-number">3.</span> <span class="post-toc-text">第三步：git checkout 分支名，切换到新建的分支</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#第四步：git-branch，重新查看一下"><span class="post-toc-number">4.</span> <span class="post-toc-text">第四步：git branch，重新查看一下</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#第五步：git-push-u-origin-分支名-同步到github线上"><span class="post-toc-number">5.</span> <span class="post-toc-text">第五步：git push -u origin 分支名,同步到github线上</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#第六步：进行add命令"><span class="post-toc-number">6.</span> <span class="post-toc-text">第六步：进行add命令</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#第七步：commit提交"><span class="post-toc-number">7.</span> <span class="post-toc-text">第七步：commit提交</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#第八步：git-push-u-origin-分支名-同步到github线上"><span class="post-toc-number">8.</span> <span class="post-toc-text">第八步：git push -u origin 分支名,同步到github线上</span></a></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-多台电脑上提交和更新github博客"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">多台电脑上提交和更新github博客</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2017-10-23 20:43:39" datetime="2017-10-23T12:43:39.000Z"  itemprop="datePublished">2017-10-23</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/blog/">blog</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h2 id="第一步：git-branch-查看当前分支情况"><a href="#第一步：git-branch-查看当前分支情况" class="headerlink" title="第一步：git branch 查看当前分支情况"></a>第一步：git branch 查看当前分支情况</h2><p><code>git branch  //查看当前分支情况</code><br><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/2017/10/23/多台电脑上提交和更新github博客/seeBranch.jpg" alt="查看分支情况" title="">
+                </div>
+                <div class="image-caption">查看分支情况</div>
+            </figure><br>我现在有2个分支  master和hexo</p>
+<h2 id="第二步：git-branch-分支名，新建一个自己的分支"><a href="#第二步：git-branch-分支名，新建一个自己的分支" class="headerlink" title="第二步：git branch 分支名，新建一个自己的分支"></a>第二步：git branch 分支名，新建一个自己的分支</h2><p><code>git branch 分支名  // 新建一个自己的分支</code><br><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/2017/10/23/多台电脑上提交和更新github博客/seeBranch.jpg" alt="创建新分支" title="">
+                </div>
+                <div class="image-caption">创建新分支</div>
+            </figure></p>
+<p>我已经创建了一个hexo分支，所以提示已存在</p>
+<h2 id="第三步：git-checkout-分支名，切换到新建的分支"><a href="#第三步：git-checkout-分支名，切换到新建的分支" class="headerlink" title="第三步：git checkout 分支名，切换到新建的分支"></a>第三步：git checkout 分支名，切换到新建的分支</h2><p><code>git checkout 分支名    //切换到新建的分支</code></p>
+<h2 id="第四步：git-branch，重新查看一下"><a href="#第四步：git-branch，重新查看一下" class="headerlink" title="第四步：git branch，重新查看一下"></a>第四步：git branch，重新查看一下</h2><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/2017/10/23/多台电脑上提交和更新github博客/seeBranch.jpg" alt="查看分支情况" title="">
+                </div>
+                <div class="image-caption">查看分支情况</div>
+            </figure>
+<p>带星号表示当前分支</p>
+<h2 id="第五步：git-push-u-origin-分支名-同步到github线上"><a href="#第五步：git-push-u-origin-分支名-同步到github线上" class="headerlink" title="第五步：git push -u origin 分支名,同步到github线上"></a>第五步：git push -u origin 分支名,同步到github线上</h2><p><code>git push -u origin 分支名    //将新建分支同步到线上</code></p>
+<h2 id="第六步：进行add命令"><a href="#第六步：进行add命令" class="headerlink" title="第六步：进行add命令"></a>第六步：进行add命令</h2><p>执行命令git add –all,将修改保存到缓存区，如果想添加某一个文件，则将后面的–all换成你要提交的文件名即可。<br><code>git add --all</code></p>
+<h2 id="第七步：commit提交"><a href="#第七步：commit提交" class="headerlink" title="第七步：commit提交"></a>第七步：commit提交</h2><p>将增加的文件commit到本地仓库里去，执行命令git commmit -m “注释语句”<br><code></code><br>git commit -m ‘注释语句’（引号内容可改）<br>`</p>
+<h2 id="第八步：git-push-u-origin-分支名-同步到github线上"><a href="#第八步：git-push-u-origin-分支名-同步到github线上" class="headerlink" title="第八步：git push -u origin 分支名,同步到github线上"></a>第八步：git push -u origin 分支名,同步到github线上</h2><p>将commit的代码push到远程分支<br><code>git push -u origin 分支名    //同步到线上新建分支</code></p>
+<p>以后每次更新都执行这三步add,commit,push</p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2018-04-09T14:20:16.106Z" itemprop="dateUpdated">2018-04-09 22:20:16</time>
+</span><br>
+
+
+        
+        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2017/10/23/多台电脑上提交和更新github博客/" target="_blank" rel="external">https://liuhoi.github.io/2017/10/23/多台电脑上提交和更新github博客/</a>
+        
+    </div>
+    
+    <footer>
+        <a href="https://liuhoi.github.io">
+            <img src="/img/cat1.JPG" alt="刘辉">
+            刘辉
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/github/">github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://liuhoi.github.io/2017/10/23/多台电脑上提交和更新github博客/&title=《多台电脑上提交和更新github博客》 — 刘辉的博客&pic=https://liuhoi.github.io/img/cat1.JPG" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://liuhoi.github.io/2017/10/23/多台电脑上提交和更新github博客/&title=《多台电脑上提交和更新github博客》 — 刘辉的博客&source=刘辉的博客" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://liuhoi.github.io/2017/10/23/多台电脑上提交和更新github博客/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《多台电脑上提交和更新github博客》 — 刘辉的博客&url=https://liuhoi.github.io/2017/10/23/多台电脑上提交和更新github博客/&via=https://liuhoi.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://liuhoi.github.io/2017/10/23/多台电脑上提交和更新github博客/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2017/11/04/android-生成证书/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">android 生成证书</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2017/10/21/hexo+github建立博客/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">hexo+github建立博客</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢大爷~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.JPG" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="/img/wechat.JPG" data-alipay="/img/alipay.JPG">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>刘辉 &copy; 2015 - 2018</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://liuhoi.github.io/2017/10/23/多台电脑上提交和更新github博客/&title=《多台电脑上提交和更新github博客》 — 刘辉的博客&pic=https://liuhoi.github.io/img/cat1.JPG" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://liuhoi.github.io/2017/10/23/多台电脑上提交和更新github博客/&title=《多台电脑上提交和更新github博客》 — 刘辉的博客&source=刘辉的博客" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://liuhoi.github.io/2017/10/23/多台电脑上提交和更新github博客/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《多台电脑上提交和更新github博客》 — 刘辉的博客&url=https://liuhoi.github.io/2017/10/23/多台电脑上提交和更新github博客/&via=https://liuhoi.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://liuhoi.github.io/2017/10/23/多台电脑上提交和更新github博客/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACt0lEQVR42u3a0U7jQAwFUP7/p0Ha1yXTa3tMQTp5qmibzAlSPL32x0d8fP477v79/9dP757PeeHAw8PDay396ThfrLqI87eern6+Hedv4eHh4e3x8od4Xgaq755Xkn8SDw8P7/fw8jKQFIDzec4kPDw8vL/Cy0m9LXLvNR4eHt67eEkYUQU8fTcJapPCcDlrwcPDw6utodAA+w2vF/t7eHh4eIOuerUxlm+jq1FFb7V4eHh4G7zkpL3GVXWJkyD4xcrx8PDwrvLOj/W8ZZWEF714YvJ5PDw8vA1e/sZkKb1H/yRPiKoZHh4e3vh3+nyAIIkq8tChN6QV1RM8PDy8AS//zd6LJ3JwtWAUbhkeHh7eAq8XRuTb7l5p6bXWyjUQDw8Pb8Drxa93N815LFstKnh4eHh3eZMHbgLO44lqMHEhccHDw8Mb8CZjWFVSfiPm23Q8PDy8u7y7w1V522yyHc/HC/Dw8PA2eHebW9WRqV5xytl4eHh4G7w8rq1GqJONdf4/eXEGPDw8vDfxqu353lKq8W40voCHh4e3xsujh1EjqhUB99pg0cQBHh4eXotXjQw2YtbqoFW5nODh4eH9CC+JJKoh73w8K18JHh4e3javt1GebKPzln9+m17g8fDw8NZ41bg2b3dVr9g7w4vCgIeHh7fAqxaGCxeubo57pQgPDw/vKi9n5Lw8zE1KQjWA+CZrwcPDw1vjJY/afBtdDXMnwweP58TDw8O7yvssHr0Q4RzOzrfmj4UNDw8Pb4FXbVZNCkYe8lbHqgptMDw8PLxLvGox6LXB8kg3Lyfl1hceHh7eVV7e2u+Fv9Ut+ySMwMPDw/srvOoIwjykiAoYHh4e3lt55wvnYwTVODi5fRcKAx4eHt5CGDGPYnuBb3VDj4eHh7fNmzTA8ltQPedksAAPDw9vjfcFrgDkKQmT+KsAAAAASUVORK5CYII=" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '付出努力才会得到回报！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '刘辉的博客!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
