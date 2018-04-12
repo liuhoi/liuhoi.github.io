@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>vue项目搭建 | 刘辉的博客 | 付出努力才会得到回报</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="vue">
+    <meta name="description" content="第一部分：vue项目的搭建vue项目的搭建全局安装 vue-cli $ npm install --global vue-cli 创建一个基于 webpack 模板的新项目 $ vue init webpack my-project 安装依赖，走你 123$ cd my-project$ npm install$ npm run dev 第二部分:插件1.    Sass的引进1.    npm命">
+<meta name="keywords" content="vue">
+<meta property="og:type" content="article">
+<meta property="og:title" content="vue项目搭建">
+<meta property="og:url" content="https://liuhoi.github.io/2018/04/12/vue项目搭建/index.html">
+<meta property="og:site_name" content="刘辉的博客">
+<meta property="og:description" content="第一部分：vue项目的搭建vue项目的搭建全局安装 vue-cli $ npm install --global vue-cli 创建一个基于 webpack 模板的新项目 $ vue init webpack my-project 安装依赖，走你 123$ cd my-project$ npm install$ npm run dev 第二部分:插件1.    Sass的引进1.    npm命">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-04-12T12:50:32.163Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="vue项目搭建">
+<meta name="twitter:description" content="第一部分：vue项目的搭建vue项目的搭建全局安装 vue-cli $ npm install --global vue-cli 创建一个基于 webpack 模板的新项目 $ vue init webpack my-project 安装依赖，走你 123$ cd my-project$ npm install$ npm run dev 第二部分:插件1.    Sass的引进1.    npm命">
+    
+        <link rel="alternate" type="application/atom+xml" title="刘辉的博客" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/img/cat1.JPG">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/cat1.JPG">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">刘辉</h5>
+          <a href="mailto:pk3845473@163.com" title="pk3845473@163.com" class="mail">pk3845473@163.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                归档
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://liuhoi.github.io/" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">vue项目搭建</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">vue项目搭建</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2018-04-12T12:17:46.000Z" itemprop="datePublished" class="page-time">
+  2018-04-12
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/vue/">vue</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#第一部分：vue项目的搭建"><span class="post-toc-number">1.</span> <span class="post-toc-text">第一部分：vue项目的搭建</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#vue项目的搭建"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">vue项目的搭建</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#第二部分-插件"><span class="post-toc-number">2.</span> <span class="post-toc-text">第二部分:插件</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-Sass的引进"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">1.    Sass的引进</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#1-npm命令"><span class="post-toc-number">2.1.1.</span> <span class="post-toc-text">1.    npm命令</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#2-配置webpack-base-conf-js"><span class="post-toc-number">2.1.2.</span> <span class="post-toc-text">2.    配置webpack.base.conf.js</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#3-Xxx-vue中使用"><span class="post-toc-number">2.1.3.</span> <span class="post-toc-text">3.    Xxx.vue中使用</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-jquery的引进"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">2.    jquery的引进</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#1-npm命令-1"><span class="post-toc-number">2.2.1.</span> <span class="post-toc-text">1.    npm命令</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#2-配置webpack-base-conf-js-1"><span class="post-toc-number">2.2.2.</span> <span class="post-toc-text">2.    配置webpack.base.conf.js</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3-layui的引进-不建议使用"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">3.    layui的引进(不建议使用)</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#4-element-ui的引进-建议使用"><span class="post-toc-number">2.4.</span> <span class="post-toc-text">4.    element-ui的引进(建议使用)</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#1-npm命令-2"><span class="post-toc-number">2.4.1.</span> <span class="post-toc-text">1.    npm命令</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#2-配置main-js"><span class="post-toc-number">2.4.2.</span> <span class="post-toc-text">2.    配置main.js</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#5-axios的引进-ie9不支持需引入polyfill"><span class="post-toc-number">2.5.</span> <span class="post-toc-text">5.    axios的引进(ie9不支持需引入polyfill)</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#1-npm命令-3"><span class="post-toc-number">2.5.1.</span> <span class="post-toc-text">1.    npm命令</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#2-在ajax-js"><span class="post-toc-number">2.5.2.</span> <span class="post-toc-text">2.    在ajax.js</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#3-在main-js"><span class="post-toc-number">2.5.3.</span> <span class="post-toc-text">3.    在main.js</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#4-在xxx-VUE中使用"><span class="post-toc-number">2.5.4.</span> <span class="post-toc-text">4.    在xxx.VUE中使用</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#6-Es6兼容ie9"><span class="post-toc-number">2.6.</span> <span class="post-toc-text">6.    Es6兼容ie9</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#1-npm命令-4"><span class="post-toc-number">2.6.1.</span> <span class="post-toc-text">1.    npm命令</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#2-在webpack-base-conf-js"><span class="post-toc-number">2.6.2.</span> <span class="post-toc-text">2.    在webpack.base.conf.js</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#7-Vuex引用"><span class="post-toc-number">2.7.</span> <span class="post-toc-text">7.    Vuex引用</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#1-npm命令-5"><span class="post-toc-number">2.7.1.</span> <span class="post-toc-text">1.    npm命令</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#2-在main-js中配置"><span class="post-toc-number">2.7.2.</span> <span class="post-toc-text">2.    在main.js中配置</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#8-Vue-lazyload引用"><span class="post-toc-number">2.8.</span> <span class="post-toc-text">8.    Vue-lazyload引用</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#1-npm命令-6"><span class="post-toc-number">2.8.1.</span> <span class="post-toc-text">1.    npm命令</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#2-在main-js中配置-1"><span class="post-toc-number">2.8.2.</span> <span class="post-toc-text">2.    在main.js中配置</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#9-图片路径问题"><span class="post-toc-number">2.9.</span> <span class="post-toc-text">9.    图片路径问题</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#1-在config文件夹中index-js中配置"><span class="post-toc-number">2.9.1.</span> <span class="post-toc-text">1.    在config文件夹中index.js中配置</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#2-在build文件夹中utils-js中配置"><span class="post-toc-number">2.9.2.</span> <span class="post-toc-text">2.    在build文件夹中utils.js中配置</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#10-路径只是参数变化"><span class="post-toc-number">2.10.</span> <span class="post-toc-text">10.    路径只是参数变化</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#1-在xxx-VUE中使用"><span class="post-toc-number">2.10.1.</span> <span class="post-toc-text">1.    在xxx.VUE中使用</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#11-Chrome浏览器安装vue-devtools（先按照官网的教程安装-如报错在使用下面的方法）"><span class="post-toc-number">2.11.</span> <span class="post-toc-text">11.    Chrome浏览器安装vue-devtools（先按照官网的教程安装  如报错在使用下面的方法）</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#12-上传到服务器"><span class="post-toc-number">2.12.</span> <span class="post-toc-text">12.    上传到服务器</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#1-npm命令-7"><span class="post-toc-number">2.12.1.</span> <span class="post-toc-text">1.    npm命令</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#第三部分-自定义组件"><span class="post-toc-number">3.</span> <span class="post-toc-text">第三部分:自定义组件</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-倒计时组件"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">1.    倒计时组件</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#1-Html"><span class="post-toc-number">3.1.1.</span> <span class="post-toc-text">1.    Html</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#2-js"><span class="post-toc-number">3.1.2.</span> <span class="post-toc-text">2.    js</span></a></li></ol></li></ol></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-vue项目搭建"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">vue项目搭建</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2018-04-12 20:17:46" datetime="2018-04-12T12:17:46.000Z"  itemprop="datePublished">2018-04-12</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/vue/">vue</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h2 id="第一部分：vue项目的搭建"><a href="#第一部分：vue项目的搭建" class="headerlink" title="第一部分：vue项目的搭建"></a>第一部分：vue项目的搭建</h2><h3 id="vue项目的搭建"><a href="#vue项目的搭建" class="headerlink" title="vue项目的搭建"></a>vue项目的搭建</h3><p>全局安装 vue-cli</p>
+<p><code>$ npm install --global vue-cli</code></p>
+<p>创建一个基于 webpack 模板的新项目</p>
+<p><code>$ vue init webpack my-project</code></p>
+<p>安装依赖，走你</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ cd my-project</span><br><span class="line">$ npm install</span><br><span class="line">$ npm run dev</span><br></pre></td></tr></table></figure>
+<h2 id="第二部分-插件"><a href="#第二部分-插件" class="headerlink" title="第二部分:插件"></a>第二部分:插件</h2><h3 id="1-Sass的引进"><a href="#1-Sass的引进" class="headerlink" title="1.    Sass的引进"></a>1.    Sass的引进</h3><h4 id="1-npm命令"><a href="#1-npm命令" class="headerlink" title="1.    npm命令"></a>1.    npm命令</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm install node-sass -–save-dev</span><br><span class="line">$ npm install sass-loader –-save-dev</span><br></pre></td></tr></table></figure>
+<h4 id="2-配置webpack-base-conf-js"><a href="#2-配置webpack-base-conf-js" class="headerlink" title="2.    配置webpack.base.conf.js"></a>2.    配置webpack.base.conf.js</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">module.exports=&#123;</span><br><span class="line">	module:&#123;</span><br><span class="line">		rules:[</span><br><span class="line">			&#123;</span><br><span class="line">		        test: /\.scss$/,</span><br><span class="line">		        loaders: [&quot;style&quot;, &quot;css&quot;, &quot;sass&quot;]</span><br><span class="line">	       	&#125;,	</span><br><span class="line">		]</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="3-Xxx-vue中使用"><a href="#3-Xxx-vue中使用" class="headerlink" title="3.    Xxx.vue中使用"></a>3.    Xxx.vue中使用</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;style  lang=&quot;scss&quot; scoped type=&quot;text/css&quot;&gt;&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="2-jquery的引进"><a href="#2-jquery的引进" class="headerlink" title="2.    jquery的引进"></a>2.    jquery的引进</h3><h4 id="1-npm命令-1"><a href="#1-npm命令-1" class="headerlink" title="1.    npm命令"></a>1.    npm命令</h4><p>$ npm install –-save jquery </p>
+<h4 id="2-配置webpack-base-conf-js-1"><a href="#2-配置webpack-base-conf-js-1" class="headerlink" title="2.    配置webpack.base.conf.js"></a>2.    配置webpack.base.conf.js</h4><p>在开头引入webpack，后面的plugins那里需要</p>
+<p><code>var webpack = require(&#39;webpack&#39;)</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">module.exports = &#123;</span><br><span class="line">   // 其他代码...</span><br><span class="line">   resolve: &#123;</span><br><span class="line">    extensions: [&apos;.js&apos;, &apos;.vue&apos;, &apos;.json&apos;],</span><br><span class="line">    alias: &#123;</span><br><span class="line">      &apos;vue$&apos;: &apos;vue/dist/vue.esm.js&apos;,</span><br><span class="line">      &apos;@&apos;: resolve(&apos;src&apos;),</span><br><span class="line">      &apos;jquery&apos;: &apos;jquery&apos; </span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">   // 增加一个plugins</span><br><span class="line">   plugins: [</span><br><span class="line">      new webpack.ProvidePlugin(&#123;</span><br><span class="line">          $: &quot;jquery&quot;,</span><br><span class="line">          jQuery: &quot;jquery&quot;</span><br><span class="line">      &#125;)</span><br><span class="line">   ],</span><br><span class="line"></span><br><span class="line">   // 其他代码...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="3-layui的引进-不建议使用"><a href="#3-layui的引进-不建议使用" class="headerlink" title="3.    layui的引进(不建议使用)"></a>3.    layui的引进(不建议使用)</h3><p>直接script,link方式引用 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;static/lib/layui/css/layui.css&quot;/&gt;</span><br><span class="line">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;static/lib/swiper-2.7.6/idangerous.swiper.css&quot;&gt;</span><br><span class="line">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;static/lib/swiper-2.7.6/idangerous.swiper.scrollbar.css&quot;&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=&quot;static/lib/layui/layui.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script src=&quot;static/lib/swiper-2.7.6/idangerous.swiper.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script src=&quot;static/lib/swiper-2.7.6/idangerous.swiper.scrollbar-2.1.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="4-element-ui的引进-建议使用"><a href="#4-element-ui的引进-建议使用" class="headerlink" title="4.    element-ui的引进(建议使用)"></a>4.    element-ui的引进(建议使用)</h3><h4 id="1-npm命令-2"><a href="#1-npm命令-2" class="headerlink" title="1.    npm命令"></a>1.    npm命令</h4><p><code>npm i element-ui --save</code></p>
+<h4 id="2-配置main-js"><a href="#2-配置main-js" class="headerlink" title="2.    配置main.js"></a>2.    配置main.js</h4><p>在main.js中写入一下内容</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">import ElementUI from &apos;element-ui&apos;</span><br><span class="line">import &apos;element-ui/lib/theme-chalk/index.css&apos;</span><br><span class="line">Vue.use(ElementUI)</span><br></pre></td></tr></table></figure>
+<h3 id="5-axios的引进-ie9不支持需引入polyfill"><a href="#5-axios的引进-ie9不支持需引入polyfill" class="headerlink" title="5.    axios的引进(ie9不支持需引入polyfill)"></a>5.    axios的引进(ie9不支持需引入polyfill)</h3><p>暂时采用挂载在Vue原型上面</p>
+<h4 id="1-npm命令-3"><a href="#1-npm命令-3" class="headerlink" title="1.    npm命令"></a>1.    npm命令</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -–save axios</span><br><span class="line">$ npm install es6-promise --save-dev</span><br></pre></td></tr></table></figure>
+<h4 id="2-在ajax-js"><a href="#2-在ajax-js" class="headerlink" title="2.    在ajax.js"></a>2.    在ajax.js</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">import qs from &apos;qs&apos;</span><br><span class="line">import axios from &apos;axios&apos;</span><br><span class="line">import promise from &apos;es6-promise&apos;</span><br><span class="line">promise.polyfill();</span><br><span class="line"></span><br><span class="line">//请求地址</span><br><span class="line">axios.defaults.baseURL = &apos;http://www.baid.com/&apos;;</span><br><span class="line"></span><br><span class="line">//请求超时时间。</span><br><span class="line">axios.defaults.timeout = 10000;</span><br><span class="line">//添加一个请求拦截器</span><br><span class="line">axios.interceptors.request.use(function(config)&#123;</span><br><span class="line">    //在请求发送之前做一些事</span><br><span class="line">  	config.url = config.url+&apos;.do&apos;;</span><br><span class="line">  	config.headers = &#123;</span><br><span class="line">  		&apos;Content-Type&apos;:&apos;application/x-www-form-urlencoded;charset=utf-8&apos;</span><br><span class="line">  	&#125;;</span><br><span class="line">    return config;</span><br><span class="line">&#125;,function(error)&#123;</span><br><span class="line">    //当出现请求错误是做一些事</span><br><span class="line">    return Promise.reject(error);</span><br><span class="line">&#125;);</span><br><span class="line">//请求时对数据进行转化。</span><br><span class="line">axios.defaults.transformRequest = [function (data, headers) &#123;</span><br><span class="line">  if(headers[&apos;Content-Type&apos;]===&apos;application/json&apos;)&#123;</span><br><span class="line">  	return data;</span><br><span class="line">  </span><br><span class="line">  &#125;else&#123;</span><br><span class="line">  	return qs.stringify(data);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;];</span><br><span class="line">export default (axios);</span><br></pre></td></tr></table></figure>
+<h4 id="3-在main-js"><a href="#3-在main-js" class="headerlink" title="3.    在main.js"></a>3.    在main.js</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">import axiosInstance from &apos;@/assets/ajax&apos;</span><br><span class="line"></span><br><span class="line">Vue.prototype.$axios = axiosInstance;</span><br></pre></td></tr></table></figure>
+<h4 id="4-在xxx-VUE中使用"><a href="#4-在xxx-VUE中使用" class="headerlink" title="4.    在xxx.VUE中使用"></a>4.    在xxx.VUE中使用</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">methods:&#123;</span><br><span class="line">	guideDetailFn:function()&#123;//服务指南详情</span><br><span class="line">		this.$axios(&#123;</span><br><span class="line">			method: &apos;post&apos;,</span><br><span class="line">			url: &apos;serviceGuide/getServiceGuide&apos;,</span><br><span class="line">			params: &#123;</span><br><span class="line">				id:this.$route.params.id,</span><br><span class="line">			&#125;,</span><br><span class="line">		&#125;).then(function (response) &#123;</span><br><span class="line">	        		</span><br><span class="line">		&#125;.bind(this))</span><br><span class="line">		.catch(function (error) &#123;</span><br><span class="line">			 console.log(error);</span><br><span class="line">		&#125;);</span><br><span class="line">	&#125;,</span><br><span class="line">&#125;,</span><br><span class="line">created:function()&#123;</span><br><span class="line">    this.$axios.all([this.guideDetailFn()])</span><br><span class="line">	.then(this.$axios.spread(function (acct, perms) &#123;</span><br><span class="line">	// Both requests are now complete</span><br><span class="line">	&#125;));</span><br><span class="line"> &#125;,</span><br></pre></td></tr></table></figure>
+<h3 id="6-Es6兼容ie9"><a href="#6-Es6兼容ie9" class="headerlink" title="6.    Es6兼容ie9"></a>6.    Es6兼容ie9</h3><h4 id="1-npm命令-4"><a href="#1-npm命令-4" class="headerlink" title="1.    npm命令"></a>1.    npm命令</h4><p><code>$ npm install babel-polyfill -–save-dev</code></p>
+<h4 id="2-在webpack-base-conf-js"><a href="#2-在webpack-base-conf-js" class="headerlink" title="2.    在webpack.base.conf.js"></a>2.    在webpack.base.conf.js</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">module.exports = &#123;</span><br><span class="line">  entry: &#123;</span><br><span class="line">    &apos;babel-polyfill&apos;: &apos;babel-polyfill&apos;,</span><br><span class="line">    app: &apos;./src/main.js&apos;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="7-Vuex引用"><a href="#7-Vuex引用" class="headerlink" title="7.    Vuex引用"></a>7.    Vuex引用</h3><h4 id="1-npm命令-5"><a href="#1-npm命令-5" class="headerlink" title="1.    npm命令"></a>1.    npm命令</h4><p><code>$ npm install vuex –-save</code></p>
+<h4 id="2-在main-js中配置"><a href="#2-在main-js中配置" class="headerlink" title="2.    在main.js中配置"></a>2.    在main.js中配置</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">import Vue from &apos;vue&apos;</span><br><span class="line">import Vuex from &apos;vuex&apos;</span><br><span class="line"></span><br><span class="line">Vue.use(Vuex)</span><br><span class="line">const store = new Vuex.Store(&#123;</span><br><span class="line">  state: &#123;</span><br><span class="line">    count: 0</span><br><span class="line">  &#125;,</span><br><span class="line">  mutations: &#123;</span><br><span class="line">    increment (state) &#123;</span><br><span class="line">      state.count++</span><br><span class="line">    &#125;</span><br><span class="line">  &#125; &#125;)</span><br><span class="line">new Vue(&#123;</span><br><span class="line">  el: &apos;#app&apos;,</span><br><span class="line">  router,</span><br><span class="line">  store,</span><br><span class="line">  template: &apos;&lt;App/&gt;&apos;,</span><br><span class="line">  components: &#123; App &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h3 id="8-Vue-lazyload引用"><a href="#8-Vue-lazyload引用" class="headerlink" title="8.    Vue-lazyload引用"></a>8.    Vue-lazyload引用</h3><h4 id="1-npm命令-6"><a href="#1-npm命令-6" class="headerlink" title="1.    npm命令"></a>1.    npm命令</h4><p><code>$ npm install vue-lazyload --save</code></p>
+<h4 id="2-在main-js中配置-1"><a href="#2-在main-js中配置-1" class="headerlink" title="2.    在main.js中配置"></a>2.    在main.js中配置</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">import VueLazyload from &apos;vue-lazyload&apos;</span><br><span class="line"></span><br><span class="line">Vue.use(VueLazyload, &#123;</span><br><span class="line">  preLoad: 1.3,</span><br><span class="line">  error: &apos;dist/error.png&apos;,</span><br><span class="line">  loading: &apos;dist/loading.gif&apos;,</span><br><span class="line">  attempt: 1</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h3 id="9-图片路径问题"><a href="#9-图片路径问题" class="headerlink" title="9.    图片路径问题"></a>9.    图片路径问题</h3><h4 id="1-在config文件夹中index-js中配置"><a href="#1-在config文件夹中index-js中配置" class="headerlink" title="1.    在config文件夹中index.js中配置"></a>1.    在config文件夹中index.js中配置</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">build: &#123;</span><br><span class="line">    env: require(&apos;./prod.env&apos;),</span><br><span class="line">    index: path.resolve(__dirname, &apos;../dist/index.html&apos;),</span><br><span class="line">    assetsRoot: path.resolve(__dirname, &apos;../dist&apos;),</span><br><span class="line">    assetsSubDirectory: &apos;static&apos;,</span><br><span class="line">    assetsPublicPath: &apos;/&apos;,</span><br><span class="line">    productionSourceMap: true,</span><br><span class="line">    // Gzip off by default as many popular static hosts such as</span><br><span class="line">    // Surge or Netlify already gzip all static assets for you.</span><br><span class="line">    // Before setting to `true`, make sure to:</span><br><span class="line">    // npm install --save-dev compression-webpack-plugin</span><br><span class="line">    productionGzip: false,</span><br><span class="line">    productionGzipExtensions: [&apos;js&apos;, &apos;css&apos;],</span><br><span class="line">    // Run the build command with an extra argument to</span><br><span class="line">    // View the bundle analyzer report after build finishes:</span><br><span class="line">    // `npm run build --report`</span><br><span class="line">    // Set to `true` or `false` to always turn it on or off</span><br><span class="line">    bundleAnalyzerReport: process.env.npm_config_report</span><br><span class="line">  &#125;,</span><br><span class="line">改为</span><br><span class="line">build: &#123;</span><br><span class="line">    env: require(&apos;./prod.env&apos;),</span><br><span class="line">    index: path.resolve(__dirname, &apos;../dist/index.html&apos;),</span><br><span class="line">    assetsRoot: path.resolve(__dirname, &apos;../dist&apos;),</span><br><span class="line">    assetsSubDirectory: &apos;static&apos;,</span><br><span class="line">    assetsPublicPath: &apos;./&apos;,</span><br><span class="line">    productionSourceMap: true,</span><br><span class="line">    // Gzip off by default as many popular static hosts such as</span><br><span class="line">    // Surge or Netlify already gzip all static assets for you.</span><br><span class="line">    // Before setting to `true`, make sure to:</span><br><span class="line">    // npm install --save-dev compression-webpack-plugin</span><br><span class="line">    productionGzip: false,</span><br><span class="line">    productionGzipExtensions: [&apos;js&apos;, &apos;css&apos;],</span><br><span class="line">    // Run the build command with an extra argument to</span><br><span class="line">    // View the bundle analyzer report after build finishes:</span><br><span class="line">    // `npm run build --report`</span><br><span class="line">    // Set to `true` or `false` to always turn it on or off</span><br><span class="line">    bundleAnalyzerReport: process.env.npm_config_report</span><br><span class="line">  &#125;,</span><br></pre></td></tr></table></figure>
+<h4 id="2-在build文件夹中utils-js中配置"><a href="#2-在build文件夹中utils-js中配置" class="headerlink" title="2.    在build文件夹中utils.js中配置"></a>2.    在build文件夹中utils.js中配置</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">if (options.extract) &#123;</span><br><span class="line">      return ExtractTextPlugin.extract(&#123;</span><br><span class="line">        use: loaders,</span><br><span class="line">        fallback: &apos;vue-style-loader&apos;</span><br><span class="line">      &#125;)</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">      return [&apos;vue-style-loader&apos;].concat(loaders)</span><br><span class="line">    &#125;</span><br><span class="line">改为</span><br><span class="line">if (options.extract) &#123;</span><br><span class="line">  	return ExtractTextPlugin.extract(&#123;</span><br><span class="line">    	use: loaders,</span><br><span class="line">    	publicPath:&apos;../../&apos;,</span><br><span class="line">    	fallback: &apos;vue-style-loader&apos;</span><br><span class="line">  	&#125;)</span><br><span class="line">&#125; else &#123;</span><br><span class="line">  	return [&apos;vue-style-loader&apos;].concat(loaders)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="10-路径只是参数变化"><a href="#10-路径只是参数变化" class="headerlink" title="10.    路径只是参数变化"></a>10.    路径只是参数变化</h3><p>如果目的地和当前路由相同，只有参数发生了改变 (比如从一个用户资料到另一个 /users/1 -&gt; /users/2)，使用 beforeRouteUpdate 来响应这个变化</p>
+<h4 id="1-在xxx-VUE中使用"><a href="#1-在xxx-VUE中使用" class="headerlink" title="1.    在xxx.VUE中使用"></a>1.    在xxx.VUE中使用</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">beforeRouteUpdate:function(to, from, next) &#123;</span><br><span class="line">	next();</span><br><span class="line">	this.axjax();//查询请求</span><br><span class="line">&#125;,</span><br><span class="line">methods:&#123;</span><br><span class="line">	nextDetail:function()&#123;</span><br><span class="line">		this.$router.push(&#123;name:this.$route.name,params:&#123;id:this.detailNext.id&#125;&#125;)	</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>注意：使用name不使用path使用path会出现错误</p>
+<h3 id="11-Chrome浏览器安装vue-devtools（先按照官网的教程安装-如报错在使用下面的方法）"><a href="#11-Chrome浏览器安装vue-devtools（先按照官网的教程安装-如报错在使用下面的方法）" class="headerlink" title="11.    Chrome浏览器安装vue-devtools（先按照官网的教程安装  如报错在使用下面的方法）"></a>11.    Chrome浏览器安装vue-devtools（先按照官网的教程安装  如报错在使用下面的方法）</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">下载devtools</span><br><span class="line">打开下载好的vue-devtools文件夹</span><br><span class="line">打开package.json文件 </span><br><span class="line">找到依赖包devDependencies里面的以下三个包进行删除 buble,buble-loader,selenium-server</span><br><span class="line">进入文件夹vue-devtools打开命令窗口</span><br><span class="line">下载以上删除的包：</span><br><span class="line">cnpm install buble</span><br><span class="line">cnpm install buble-loader</span><br><span class="line">cnpm install wbuf </span><br><span class="line">cnpm install selenium-server(该安装过程可能会卡在那里，按ctrl+c结束,不影响) </span><br><span class="line">下载依赖包里的安装包 cnpm install </span><br><span class="line">运行 npm run build</span><br><span class="line">进入文件夹vue-devtools </span><br><span class="line"></span><br><span class="line">进入shells--&gt;chrome--&gt;manifest.json打开修改以下内容：</span><br><span class="line">找到以下部分：</span><br><span class="line">	&quot;persistent&quot;:false </span><br><span class="line">	修改为：</span><br><span class="line"> 	&quot;persistent&quot;:true </span><br><span class="line">进入shells--&gt;chrome--&gt;webpack.config.js打开修改以下内容：(按照自己的需求来)</span><br><span class="line"> 找到以下部分：（最后面）</span><br><span class="line"> 	&apos;process.env&apos;:&#123;NODE_ENV:&quot;production&quot;&#125;</span><br><span class="line"> 	修改为： </span><br><span class="line">	&apos;process.env&apos;:&#123;NODE_ENV:&quot;development&quot;&#125;</span><br><span class="line">把插件应用到浏览器</span><br><span class="line">找到文件夹vue-devtools\shells下的chrome文件夹 </span><br><span class="line">直接拖进浏览器的更多工具--&gt;扩展程序里</span><br></pre></td></tr></table></figure>
+<h3 id="12-上传到服务器"><a href="#12-上传到服务器" class="headerlink" title="12.    上传到服务器"></a>12.    上传到服务器</h3><h4 id="1-npm命令-7"><a href="#1-npm命令-7" class="headerlink" title="1.    npm命令"></a>1.    npm命令</h4><p><code>$ npm run build</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">命令执行后会在当前工程在创建dist文件夹</span><br><span class="line">将dist目录放在服务器中就可以了</span><br></pre></td></tr></table></figure></p>
+<h2 id="第三部分-自定义组件"><a href="#第三部分-自定义组件" class="headerlink" title="第三部分:自定义组件"></a>第三部分:自定义组件</h2><h3 id="1-倒计时组件"><a href="#1-倒计时组件" class="headerlink" title="1.    倒计时组件"></a>1.    倒计时组件</h3><h4 id="1-Html"><a href="#1-Html" class="headerlink" title="1.    Html"></a>1.    Html</h4><p><code>&lt;code&gt;&lt;count-down :time=&quot;info.biddingTime&quot;&gt;&lt;/count-down&gt;&lt;/code&gt;</code></p>
+<h4 id="2-js"><a href="#2-js" class="headerlink" title="2.    js"></a>2.    js</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line">Vue.component:&#123;</span><br><span class="line">	&apos;count-down&apos;:&#123;</span><br><span class="line">		template:&apos;&lt;span class=&quot;time&quot;&gt;&#123;&#123;needTime&#125;&#125;&lt;/span&gt;&apos;,</span><br><span class="line">		data:function()&#123;</span><br><span class="line">			return&#123;</span><br><span class="line">				needTime:&apos;&apos;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		props:[&apos;time&apos;],</span><br><span class="line">		methods:&#123;</span><br><span class="line">			dealTime:function(time)&#123;	</span><br><span class="line">				var leftTime = time;</span><br><span class="line">				var days = parseInt(leftTime / 1000 / 60 / 60 / 24 , 10); //计算剩余的天数 </span><br><span class="line">				var hours = parseInt(leftTime / 1000 / 60 / 60 % 24 , 10); //计算剩余的小时 </span><br><span class="line">				var minutes = parseInt(leftTime / 1000 / 60 % 60, 10);//计算剩余的分钟 </span><br><span class="line">				var seconds = parseInt(leftTime / 1000 % 60, 10);//计算剩余的秒数 </span><br><span class="line">				days = checkTime(days); </span><br><span class="line">				hours = checkTime(hours); </span><br><span class="line">				minutes = checkTime(minutes); </span><br><span class="line">				seconds = checkTime(seconds); </span><br><span class="line">				function checkTime(i)&#123; //将0-9的数字前面加上0，例1变为01 </span><br><span class="line">				 if(i&lt;10) </span><br><span class="line">				 &#123; </span><br><span class="line">				  i = &quot;0&quot; + i; </span><br><span class="line">				 &#125; </span><br><span class="line">				 return i; </span><br><span class="line">				&#125; </span><br><span class="line">				return (hours+&quot;:&quot; + minutes+&quot;:&quot;+seconds);</span><br><span class="line">			&#125;,</span><br><span class="line">			getTime:function(time)&#123;</span><br><span class="line">				var date = time - Date.now();</span><br><span class="line">				if(date&lt;=0)&#123;</span><br><span class="line">					this.needTime  = &apos;00:00:00&apos;;</span><br><span class="line">				&#125;else&#123;</span><br><span class="line">					this.needTime = this.dealTime(date);</span><br><span class="line">					var interval =  setInterval(function()&#123;</span><br><span class="line">  						date = time - Date.now();</span><br><span class="line">  						if(date&lt;=0)&#123;</span><br><span class="line">  							clearInterval(interval);</span><br><span class="line">  							this.needTime = &apos;00:00:00&apos;;</span><br><span class="line">  						&#125;else&#123;</span><br><span class="line">  							this.needTime = this.dealTime(date);</span><br><span class="line">  						&#125;</span><br><span class="line">					&#125;.bind(this),1000)</span><br><span class="line">				&#125;</span><br><span class="line">				</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		created:function()&#123;</span><br><span class="line">			this.needTime = + new Date(this.time.replace(/\-/g,&apos;/&apos;).replace(/\.0/g,&apos;&apos;));</span><br><span class="line">			this.getTime(this.needTime);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2018-04-12T12:50:32.163Z" itemprop="dateUpdated">2018-04-12 20:50:32</time>
+</span><br>
+
+
+        
+        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2018/04/12/vue项目搭建/" target="_blank" rel="external">https://liuhoi.github.io/2018/04/12/vue项目搭建/</a>
+        
+    </div>
+    
+    <footer>
+        <a href="https://liuhoi.github.io">
+            <img src="/img/cat1.JPG" alt="刘辉">
+            刘辉
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue/">vue</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://liuhoi.github.io/2018/04/12/vue项目搭建/&title=《vue项目搭建》 — 刘辉的博客&pic=https://liuhoi.github.io/img/cat1.JPG" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://liuhoi.github.io/2018/04/12/vue项目搭建/&title=《vue项目搭建》 — 刘辉的博客&source=刘辉的博客" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://liuhoi.github.io/2018/04/12/vue项目搭建/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《vue项目搭建》 — 刘辉的博客&url=https://liuhoi.github.io/2018/04/12/vue项目搭建/&via=https://liuhoi.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://liuhoi.github.io/2018/04/12/vue项目搭建/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2017/11/15/mui-vue结合使用/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">mui+vue结合使用</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢大爷~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.JPG" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="/img/wechat.JPG" data-alipay="/img/alipay.JPG">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>刘辉 &copy; 2015 - 2018</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://liuhoi.github.io/2018/04/12/vue项目搭建/&title=《vue项目搭建》 — 刘辉的博客&pic=https://liuhoi.github.io/img/cat1.JPG" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://liuhoi.github.io/2018/04/12/vue项目搭建/&title=《vue项目搭建》 — 刘辉的博客&source=刘辉的博客" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://liuhoi.github.io/2018/04/12/vue项目搭建/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《vue项目搭建》 — 刘辉的博客&url=https://liuhoi.github.io/2018/04/12/vue项目搭建/&via=https://liuhoi.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://liuhoi.github.io/2018/04/12/vue项目搭建/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACLUlEQVR42u3aQW7DMAwF0dz/0u62QCplPqUUEDVaBU5j83nBiqReL7yet/X7+q7P7/ffvGTIkHEs45ku/vjRPUmg8+fOY5MhQ8Y9jFEGG/1N7Vc8aP4UGTJkyNibZMnrkCFDhowVBg99HiKHyZAhQ0ZaxPJ2WJqO05QtQ4aM2xi86/7/n78y35AhQ8ZRjCdcfPRIkiNvxn2ISoYMGa0ZtREmL2JJSTxPr8GLkCFDRmsGLztXDlKkd+ZIGTJk3MMgBeTeRj8fIfBBhQwZMvoxats4Hi7/FT92Frx7GTJktGPUSspds4h0gDpMuDJkyGjHSEtKjkkPe6XbxKAzJ0OGjMMZ6XEHXsTWRpspYPh/Q4YMGU0ZPIOlqTMNOv5WhgwZlzHSBlw6QqgF/SEFy5AhozWDF6u7tnr80EY8NpAhQ0ZTRvFERumwBb8bL6plyJBxA6PWlOdplN+Np1q0z5UhQ0Yjxq5GGB+F8i1pEIkMGTJaM3gSXMroYUuOvFx0LEyGDBntGGnpWGuurd8BDTJlyJDRlJGm3bQBxw9tFAcGMmTIaM1Ih4scxsNFrf9w6ylDhowejCdc6RZw5QBZ8FwZMmS0ZvD1vU1e7chFmqZlyJBxOmOl7CQhpumbbBn/uC5DhowLGHyTx0tZfpCiVsQO5xsyZMi4nlGDpYD0ugwZMmTU2vfpKJRvGWXIkHEngxexaYh7y9dt7TYZMmQcxUgTaDoq4BvEtNyVIUPGBYwfLesd84UXUhUAAAAASUVORK5CYII=" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '付出努力才会得到回报！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '刘辉的博客!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
